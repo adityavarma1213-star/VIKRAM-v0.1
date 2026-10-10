@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="js/runtimeConfig.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIKRAM — Discover Analyse Invest Grow</title>
+<meta name="description" content="VIKRAM is an evidence-first Indian equity research platform for NSE stocks, accumulation signals, verified historical research, opportunity scanning, and explainable investment analysis.">
+<link rel="canonical" href="https://adityavarma1213-star.github.io/Vikram/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VIKRAM — Indian Equity Research &amp; Analysis">
+<meta property="og:description" content="Evidence-first NSE stock research, verified accumulation analysis, historical research, and explainable market intelligence.">
+<meta property="og:url" content="https://adityavarma1213-star.github.io/Vikram/">
+<meta property="og:site_name" content="VIKRAM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VIKRAM — Indian Equity Research &amp; Analysis">
+<meta name="twitter:description" content="Evidence-first NSE stock research, verified accumulation analysis, historical research, and explainable market intelligence.">
+<meta name="theme-color" content="#0b1220">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"VIKRAM",
+  "url":"https://adityavarma1213-star.github.io/Vikram/",
+  "description":"Evidence-first Indian equity research and analysis platform for NSE-listed stocks.",
+  "applicationCategory":"FinanceApplication",
+  "operatingSystem":"Web"
+}
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/discovery-premium.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/aurora.css">
+<link rel="stylesheet" href="css/sample-dark-home.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<style>
+:root{--page-max:1640px}body{background:var(--bg-page);color:var(--text-main)}
+.navbar{height:60px;position:sticky;top:0;z-index:900;display:flex;align-items:center;gap:14px;padding:0 22px;background:color-mix(in srgb,var(--bg-card) 92%,transparent);border-bottom:1px solid var(--border-subtle);backdrop-filter:blur(18px)}
+.header-search-shortcut{display:flex;align-items:center;gap:10px;flex:1;max-width:420px;padding:9px 14px;border:1px solid var(--border-subtle);border-radius:999px;background:var(--bg-page);color:var(--text-muted);font-size:12px;cursor:pointer;text-align:left}
+.header-search-shortcut:hover{border-color:var(--accent-cyan)}
+.header-search-shortcut .hss-text{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.header-search-shortcut .hss-kbd{font-size:9px;font-weight:800;border:1px solid var(--border-subtle);border-radius:5px;padding:2px 5px;color:var(--text-muted)}
+.nav-icon-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--border-subtle);background:var(--bg-card);cursor:pointer;font-size:14px;display:grid;place-items:center;color:var(--text-muted);flex:0 0 auto}
+.nav-stat-group{display:flex;gap:10px;flex:0 0 auto}
+.nav-stat{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;color:var(--text-muted);border:1px dashed var(--border-subtle);border-radius:999px;padding:5px 9px;white-space:nowrap;cursor:default}
+.nav-stat b{color:var(--text-main);font-weight:900}
+@media(max-width:1300px){.header-search-shortcut,.nav-stat-group{display:none}}
+.brand-lockup{display:flex;align-items:center;gap:10px;min-width:250px}.brand-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:var(--accent-cyan);color:var(--bg-page);font-weight:900}.brand-name{font-size:19px;font-weight:900;letter-spacing:.16em}.nav-tagline{font-size:9px;letter-spacing:.16em;color:var(--text-muted);font-weight:800}
+.nav-spacer{flex:1}.theme-wrap{position:relative}.theme-menu-btn{border:1px solid var(--border-subtle);background:var(--bg-card);color:var(--text-main);border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer}.theme-menu{display:none}.theme-menu.open{display:grid;gap:4px}.theme-option{width:100%;border:0;background:transparent;color:var(--text-main);padding:9px 10px;text-align:left;border-radius:9px;cursor:pointer}.theme-option:hover,.theme-option.active{background:var(--bg-card-2);color:var(--accent-cyan)}.mode-row{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-top:1px solid var(--border-subtle);margin-top:5px;color:var(--text-muted);font-size:12px}.switch{position:relative;width:42px;height:23px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;inset:0;border-radius:999px;background:var(--bg-card-2);border:1px solid var(--border-subtle);cursor:pointer}.slider:before{content:"";position:absolute;width:17px;height:17px;left:2px;top:2px;border-radius:50%;background:var(--text-muted);transition:.18s}.switch input:checked+.slider:before{transform:translateX(19px);background:var(--accent-cyan)}
+.profile-badge{display:flex;align-items:center;gap:8px;border:1px solid var(--border-subtle);background:var(--bg-card);border-radius:999px;padding:5px 10px 5px 5px;font-size:12px;font-weight:800}.avatar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-cyan);color:var(--bg-page)}
+.profile-progress-pill{border:1px dashed var(--border-subtle);color:var(--text-muted);background:transparent;border-radius:999px;padding:6px 12px;font-size:9.5px;font-weight:800;letter-spacing:.02em;white-space:nowrap;cursor:default}
+@media(max-width:1250px){.profile-progress-pill{display:none}}
+.sidebar{padding:22px 12px;border-right:1px solid var(--border-subtle);background:color-mix(in srgb,var(--bg-sidebar) 58%,transparent)}.side-section{margin-bottom:22px}.side-label{padding:0 11px 8px;color:var(--text-muted);font-size:9px;letter-spacing:.14em;font-weight:900}.side-link{display:flex;align-items:center;gap:9px;padding:10px 11px;border-radius:10px;color:var(--text-muted);text-decoration:none;font-size:12px;font-weight:800}.side-link:hover,.side-link.active{background:var(--bg-card-2);color:var(--text-main)}.side-link.active{box-shadow:inset 3px 0 var(--accent-cyan)}.new-pill{margin-left:auto;border-radius:999px;padding:2px 6px;background:var(--accent-cyan);color:var(--bg-page);font-size:8px}.side-link--soon{opacity:.5;cursor:not-allowed}.side-link--soon:hover{background:transparent;color:var(--text-muted)}.soon-pill{margin-left:auto;border-radius:999px;padding:2px 6px;background:color-mix(in srgb,var(--text-muted) 25%,transparent);color:var(--text-muted);font-size:8px;font-weight:900}.quote-card{margin:32px 2px 0;padding:14px;border:1px solid var(--border-subtle);border-radius:14px;background:var(--bg-card)}.quote-card p{margin:0;font-size:11px;line-height:1.5;color:var(--text-muted)}.quote-card strong{display:block;margin-top:8px;font-size:9px;color:var(--accent-cyan)}
+.main-content{padding:20px 22px 50px;min-width:0;max-width:var(--page-max)}.hero-panoramic{position:relative;overflow:visible;min-height:300px;padding:28px;border:1px solid var(--border-subtle);border-radius:22px;background:var(--hero-bg);box-shadow:var(--shadow-lg)}.hero-panoramic:after{content:"";position:absolute;inset:auto 0 0;height:105px;opacity:.22;background:linear-gradient(135deg,transparent 0 16%,#061018 16% 33%,transparent 33% 47%,#061018 47% 68%,transparent 68% 79%,#061018 79%);clip-path:polygon(0 100%,0 62%,13% 76%,25% 43%,36% 70%,49% 31%,62% 66%,76% 40%,88% 72%,100% 50%,100% 100%);pointer-events:none}.hero-content{position:relative;z-index:2;max-width:850px}.eyebrow{font-size:9px;letter-spacing:.18em;color:var(--accent-cyan);font-weight:900}.hero-panoramic h1{margin:10px 0 7px;font-size:clamp(34px,5vw,60px);line-height:1;letter-spacing:-.055em}.hero-panoramic p{margin:0;color:var(--text-muted);max-width:700px}.hero-search{display:flex;gap:8px;margin-top:22px;position:relative;z-index:20}.hero-search input{flex:1;height:50px;min-width:0;border:1px solid var(--border-subtle);border-radius:12px;background:rgba(0,0,0,.13);color:var(--text-main);padding:0 15px;outline:none}.hero-search button{height:50px;border:0;border-radius:12px;padding:0 20px;background:var(--accent-cyan);color:var(--bg-page);font-weight:900;cursor:pointer}.popular{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.ticker-pill{border:1px solid var(--border-subtle);border-radius:999px;background:rgba(255,255,255,.04);color:var(--text-main);padding:6px 9px;font-size:10px;font-weight:800;cursor:pointer}.ticker-pill:hover{border-color:var(--accent-cyan);color:var(--accent-cyan)}.hero-slogan{position:absolute;right:26px;bottom:28px;z-index:2;max-width:300px;text-align:right;font-family:cursive;font-size:22px;color:var(--text-main);opacity:.82}
+.suggestions-dropdown{position:absolute;left:0;right:88px;top:58px;z-index:9999;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:12px;box-shadow:var(--shadow-lg);overflow:hidden}.suggestion{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;cursor:pointer}.suggestion:hover{background:var(--bg-card-2)}.suggestion small{color:var(--text-muted)}
+.indices-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:16px}.index-card{padding:15px;border:1px solid var(--border-subtle);border-radius:15px;background:var(--bg-card)}.index-card span{display:block;color:var(--text-muted);font-size:9px;letter-spacing:.08em;font-weight:900}.index-card strong{display:block;margin:6px 0 3px;font-size:19px}.delta{font-size:10px;font-weight:900}.delta.na{color:var(--text-muted)}
+.action-modules-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:16px}.action-card{padding:17px;border-radius:16px;color:#fff;text-decoration:none;min-height:125px;box-shadow:var(--shadow-md)}.action-card h3{margin:0 0 8px;font-size:14px}.action-card p{margin:0;font-size:10px;line-height:1.5;opacity:.85}.module-blue{background:linear-gradient(135deg,#2563eb,#0ea5e9)}.module-purple{background:linear-gradient(135deg,#7c3aed,#a855f7)}.module-orange{background:linear-gradient(135deg,#ea580c,#f59e0b)}.module-green{background:linear-gradient(135deg,#059669,#22c55e)}.module-teal{background:linear-gradient(135deg,#0891b2,#14b8a6)}.module-red{background:linear-gradient(135deg,#be123c,#f43f5e)}
+.hg-empty-state{padding:16px 18px;border:1px dashed var(--border-subtle);border-radius:12px;color:var(--text-muted);font-size:11.5px;line-height:1.6}.hg-empty-state strong{display:block;margin-bottom:6px;color:var(--text-main);font-size:12.5px;letter-spacing:.04em}
+.research-meta{margin:2px 0 12px;color:var(--text-muted);font-size:10px;font-weight:700;display:flex;gap:14px;flex-wrap:wrap}.research-meta strong{color:var(--text-main);font-weight:800}
+.research-cta{margin-top:12px;font-size:11px}.research-cta a{color:var(--accent-cyan);font-weight:800;text-decoration:none}.research-cta a:hover{text-decoration:underline}
+.scanner-container-surface{margin-top:18px;padding:18px;border:1px solid var(--border-subtle);border-radius:18px;background:var(--bg-card);box-shadow:var(--shadow-md)}.surface-tabs{display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid var(--border-subtle);padding-bottom:12px}.surface-tab{border:0;background:transparent;color:var(--text-muted);padding:8px 10px;border-radius:8px;font-size:11px;font-weight:900;cursor:pointer}.surface-tab.active,.surface-tab:hover:not(:disabled){background:var(--bg-card-2);color:var(--accent-cyan)}.surface-tab:disabled{cursor:not-allowed;opacity:.5}.surface-tab:disabled:hover{background:transparent;color:var(--text-muted)}.tab-unavailable{display:inline-block;margin-left:6px;font-size:8.5px;font-weight:800;letter-spacing:.04em;color:var(--text-muted);background:var(--bg-card-2);border:1px solid var(--border-subtle);border-radius:999px;padding:1px 6px;vertical-align:middle}.filter-controls{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.filter-controls select{border:1px solid var(--border-subtle);background:var(--bg-card-2);color:var(--text-main);border-radius:9px;padding:8px 10px;font-size:10px;font-weight:800}.scanner-table-wrap{overflow:auto;border:1px solid var(--border-subtle);border-radius:12px}.scanner-table{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse}.scanner-table th:nth-child(1),.scanner-table td:nth-child(1){width:20%}.scanner-table th:nth-child(2),.scanner-table td:nth-child(2){width:9%}.scanner-table th:nth-child(3),.scanner-table td:nth-child(3){width:8%}.scanner-table th:nth-child(4),.scanner-table td:nth-child(4){width:8%}.scanner-table th:nth-child(5),.scanner-table td:nth-child(5){width:9%}.scanner-table th:nth-child(6),.scanner-table td:nth-child(6){width:10%}.scanner-table th:nth-child(7),.scanner-table td:nth-child(7){width:10%}.scanner-table th:nth-child(8),.scanner-table td:nth-child(8){width:9%}.scanner-table th:nth-child(9),.scanner-table td:nth-child(9){width:17%}.scanner-table th,.scanner-table td{padding:9px 8px;white-space:normal;overflow-wrap:anywhere}.scanner-table td:first-child,.scanner-table td:last-child{word-break:break-word}.scanner-table th,.scanner-table td{padding:11px;border-bottom:1px solid var(--border-subtle);text-align:left;font-size:10px}.scanner-table th{color:var(--text-muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--bg-card-2);position:sticky;top:0;z-index:3;font-weight:800}.scanner-meta{margin:0 0 11px;color:var(--text-muted);font-size:10px;font-weight:700;display:flex;gap:14px;flex-wrap:wrap}.scanner-meta strong{color:var(--text-main);font-weight:800}.scanner-table td{color:var(--text-main);font-size:12.5px}.scanner-table td:nth-child(1) strong{font-size:13px;font-weight:800}.scanner-table td:nth-child(4) strong{font-size:13px}.scanner-table tr:last-child td{border-bottom:0}.status-confirmed{color:var(--green);font-weight:800;font-size:12.5px}.status-starting,.status-quiet{color:var(--accent-cyan);font-weight:800;font-size:12.5px}.status-distribution{color:var(--red);font-weight:800;font-size:12.5px}.status-mixed{color:var(--amber-verdict);font-weight:800;font-size:12.5px}
+.dc-verdict.status-confirmed,.dc-verdict.status-starting,.dc-verdict.status-quiet,.dc-verdict.status-distribution,.dc-verdict.status-mixed{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;font-size:11px}
+.dc-verdict.status-confirmed{background:color-mix(in srgb,var(--green) 14%,transparent);border:1px solid color-mix(in srgb,var(--green) 35%,transparent)}
+.dc-verdict.status-starting,.dc-verdict.status-quiet{background:color-mix(in srgb,var(--accent-cyan) 14%,transparent);border:1px solid color-mix(in srgb,var(--accent-cyan) 35%,transparent)}
+.dc-verdict.status-distribution{background:color-mix(in srgb,var(--red) 14%,transparent);border:1px solid color-mix(in srgb,var(--red) 35%,transparent)}
+.dc-verdict.status-mixed{background:color-mix(in srgb,var(--amber-verdict) 14%,transparent);border:1px solid color-mix(in srgb,var(--amber-verdict) 35%,transparent)}.empty-cell{text-align:center!important;color:var(--text-muted)!important;padding:26px!important}
+.company-overview{margin-top:18px}.overview-card{padding:18px;border:1px solid var(--border-subtle);border-radius:18px;background:var(--bg-card)}.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.metric{padding:12px;border:1px solid var(--border-subtle);border-radius:11px;background:var(--bg-card-2)}.metric span{display:block;color:var(--text-muted);font-size:9px}.metric strong{display:block;margin-top:4px;font-size:13px}.hidden{display:none!important}
+.right-feed{padding:20px 12px;border-left:1px solid var(--border-subtle);background:color-mix(in srgb,var(--bg-card) 42%,transparent)}.feed-card{padding:16px;margin-bottom:12px;border:1px solid var(--border-subtle);border-radius:16px;background:var(--bg-card)}.feed-card h3{margin:0 0 10px;font-size:11px}.market-closed{display:inline-block;padding:5px 8px;border-radius:999px;background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green);font-size:9px;font-weight:900}.date-big{font-size:22px;font-weight:900;margin:7px 0}.buffett{font-family:Georgia,serif;font-size:17px;line-height:1.35}.buffett small{display:block;margin-top:9px;font-family:Inter,sans-serif;color:var(--text-muted);font-size:9px}.breadth{display:grid;place-items:center;gap:9px}.donut{width:126px;height:126px;border-radius:50%;background:conic-gradient(var(--green) 0 57.7%,var(--red) 57.7% 96.5%,#94a3b8 96.5% 100%);display:grid;place-items:center}.donut:after{content:"3,190";width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:var(--bg-card);font-size:19px;font-weight:900}.breadth-stats{width:100%;display:grid;gap:6px}.breadth-stats div{display:flex;justify-content:space-between;font-size:10px}.breadth-stats b{font-weight:900}.adv{color:var(--green)}.dec{color:var(--red)}
+@media(max-width:1250px){.brand-lockup{min-width:210px}.indices-grid,.action-modules-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1050px){.workspace-layout{grid-template-columns:190px 1fr}.right-feed{display:none}.hero-slogan{display:none}}
+@media(max-width:1100px){.scanner-table{min-width:760px;table-layout:auto}.scanner-table th,.scanner-table td{white-space:nowrap}.scanner-table-wrap{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-gutter:stable}}
+@media(max-width:760px){.workspace-layout{display:block}.sidebar{display:none}.navbar{height:auto;min-height:60px;flex-wrap:wrap;padding:9px 12px}.brand-lockup{min-width:auto}.nav-tagline{display:none}.profile-badge{margin-left:auto}.main-content{padding:12px}.indices-grid,.action-modules-grid,.overview-grid{grid-template-columns:1fr}.hero-panoramic{padding:21px}.hero-panoramic h1{font-size:39px}.suggestions-dropdown{right:0}.hero-search{flex-direction:column}.hero-search button{width:100%}}
+
+/* VIKRAM scanner filter refresh — UI only; existing filter/data logic is preserved. */
+.scanner-filter-panel{margin:14px 0 16px;padding:14px 16px;border:1px solid var(--border-subtle);border-radius:16px;background:color-mix(in srgb,var(--bg-card-2) 72%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.scanner-filter-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.scanner-filter-title{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text-main)}.scanner-filter-subtitle{font-size:10px;color:var(--text-muted);margin-top:3px}.scanner-filter-actions{display:flex;align-items:center;gap:8px}.filter-match-count{font-size:10px;font-weight:800;color:var(--accent-cyan);white-space:nowrap}.clear-filters-btn{border:1px solid var(--border-subtle);background:transparent;color:var(--text-muted);border-radius:9px;padding:7px 10px;font-size:10px;font-weight:800;cursor:pointer}.clear-filters-btn:hover{color:var(--text-main);border-color:var(--accent-cyan)}
+.aurora-filter-toolbar.scanner-filter-controls{margin:0;display:grid;grid-template-columns:repeat(4,minmax(120px,1fr)) minmax(180px,1.5fr);gap:9px}.scanner-filter-controls .filter-chip{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)}.scanner-filter-controls .filter-chip select,.scanner-filter-controls .table-search-input{width:100%;box-sizing:border-box;height:38px}.scanner-filter-controls .table-search-input{border:1px solid var(--border-subtle);background:var(--bg-card-2);color:var(--text-main);border-radius:9px;padding:8px 10px;font-size:11px;font-weight:700;outline:none}.scanner-filter-controls .table-search-input:focus,.scanner-filter-controls select:focus{border-color:var(--accent-cyan);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent-cyan) 18%,transparent)}
+.scanner-quick-filters{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:11px}.quick-filter-label{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-right:2px}.quick-filter-btn{border:1px solid var(--border-subtle);background:transparent;color:var(--text-muted);border-radius:999px;padding:7px 11px;font-size:10px;font-weight:800;cursor:pointer;transition:.15s ease}.quick-filter-btn:hover{color:var(--text-main);border-color:var(--accent-cyan);transform:translateY(-1px)}.quick-filter-btn.active{background:color-mix(in srgb,var(--accent-cyan) 14%,var(--bg-card-2));border-color:var(--accent-cyan);color:var(--accent-cyan)}
+@media(max-width:900px){.aurora-filter-toolbar.scanner-filter-controls{grid-template-columns:repeat(2,minmax(140px,1fr))}.scanner-filter-head{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.aurora-filter-toolbar.scanner-filter-controls{grid-template-columns:1fr}.scanner-filter-actions{width:100%;justify-content:space-between}}
+
+/* Opportunity Radar — visual refresh based on the supplied final design reference. UI only; filter/data logic unchanged. */
+.vikram-radar-surface{padding:12px 14px 16px!important;border:1px solid var(--border-subtle);border-radius:18px;background:linear-gradient(145deg,color-mix(in srgb,var(--bg-card) 96%,transparent),color-mix(in srgb,var(--bg-card-2) 88%,transparent));box-shadow:0 14px 35px rgba(0,0,0,.18)}
+.radar-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:12px 4px 14px}.radar-title-wrap{display:flex;align-items:center;gap:12px}.radar-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,#152b55,#07172f);font-size:22px;border:1px solid var(--border-subtle)}.radar-title-wrap h2{margin:0;font-size:21px;letter-spacing:-.02em}.radar-title-wrap p{margin:3px 0 0;color:var(--text-muted);font-size:11px}.radar-date-block{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end;font-size:10px;color:var(--text-muted)}.radar-date-block strong{color:var(--text-main)}.radar-verified-badge{padding:7px 12px;border-radius:999px;border:1px solid #8b5cf6;color:#c4b5fd;background:rgba(139,92,246,.12);font-weight:900;letter-spacing:.06em}
+.vikram-radar-surface{position:relative;z-index:1000}
+/* Deterministic column menus: visible buttons own the click target; the hidden selects remain the
+   canonical state controls (unchanged from before — same clip-hidden pattern, just no visible
+   chip/trigger wrapping them any more). */
+.radar-native-select{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;opacity:0!important;pointer-events:none!important}
+/* New minimal toolbar: Universe pills + note + search only — Verdict/Score/Sort have no visible
+   control here any more; their UI is entirely in the table headers (see .radar-col-menu below). */
+.radar-mini-toolbar{display:flex;flex-direction:column;gap:9px;padding:11px;border:1px solid var(--border-subtle);border-radius:14px;background:color-mix(in srgb,var(--bg-card-2) 80%,transparent)}
+/* RSI filter bar — UNLIKE the selects above, these are real, visible, clickable controls (RSI has
+   no existing table column to attach a header-menu to). Shared by Master/Accumulation Scanner,
+   Opportunity Radar and Hidden Gems — see rsiRowMatches() in the inline script below. */
+.rsi-filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:11px;border:1px solid var(--border-subtle);border-radius:14px;background:color-mix(in srgb,var(--bg-card-2) 80%,transparent);margin-top:9px}
+.rsi-filter-bar-label{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-right:2px;flex:0 0 100%}
+.rsi-select,.rsi-input{border:1px solid var(--border-subtle);background:var(--bg-card-2);color:var(--text-main);border-radius:9px;padding:8px 10px;font-size:10px;font-weight:800;outline:none;height:36px;box-sizing:border-box}
+.rsi-input{width:90px}
+.rsi-select:focus,.rsi-input:focus{border-color:var(--accent-cyan);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent-cyan) 18%,transparent)}
+.radar-universe-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.radar-universe-pills{display:flex;flex-wrap:wrap;gap:6px}
+.radar-universe-pill{border:1px solid var(--border-subtle);background:color-mix(in srgb,var(--bg-card) 62%,transparent);color:var(--text-muted);border-radius:999px;padding:7px 12px;font-size:10px;font-weight:800;cursor:pointer;touch-action:manipulation}
+.radar-universe-pill:hover{border-color:var(--accent-cyan);color:var(--text-main)}
+.radar-universe-pill.active{background:color-mix(in srgb,var(--accent-cyan) 16%,var(--bg-card-2));border-color:var(--accent-cyan);color:var(--accent-cyan)}
+.radar-universe-status{display:flex;flex-direction:column;justify-content:center;padding:5px 2px;color:var(--text-main);font-size:10px}.radar-universe-status small{font-size:8px;color:#34d399;font-weight:900;letter-spacing:.05em;margin-top:2px}
+.radar-universe-note{margin:0;font-size:9px;line-height:1.5;color:var(--text-muted)}
+.radar-search-wrap{display:flex;align-items:center;gap:7px;border:1px solid var(--border-subtle);border-radius:11px;padding:0 11px;background:color-mix(in srgb,var(--bg-card) 62%,transparent);max-width:360px}.radar-search-wrap input{width:100%;height:38px;border:0;outline:0;background:transparent;color:var(--text-main);font-size:11px}.radar-search-icon{font-size:18px;color:var(--text-muted)}
+.radar-filter-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;min-height:26px}.filter-match-count{font-size:10px;font-weight:800;color:var(--accent-cyan)}.clear-filters-btn{border:1px solid var(--border-subtle);background:transparent;color:var(--text-muted);border-radius:8px;padding:5px 9px;font-size:9px;font-weight:800;cursor:pointer}.clear-filters-btn:hover{border-color:var(--accent-cyan);color:var(--text-main)}
+/* Interactive table headers: click opens a menu (below), never sorts/filters on click alone. */
+.radar-table-scroll th[data-col-menu]{cursor:pointer;user-select:none;touch-action:manipulation}
+.radar-table-scroll th[data-col-menu]:hover,.radar-table-scroll th[data-col-menu]:focus-visible{color:var(--accent-cyan);outline:none}
+.radar-table-scroll th.radar-th-active{color:var(--accent-cyan)}
+/* The ONE shared column-menu instance — position:fixed and appended to <body> (not inside the
+   horizontally-scrolling table), with its top/left computed and viewport-clamped in JS, so it can
+   never be clipped by .radar-table-scroll{overflow-x:auto} or run off-screen at any column or width. */
+.radar-col-menu{position:fixed;z-index:20000;display:none;min-width:210px;max-width:min(320px,92vw);max-height:min(320px,70vh);overflow:auto;padding:5px;border:1px solid var(--border-subtle);border-radius:11px;background:var(--bg-solid,var(--bg-card));box-shadow:0 16px 36px rgba(0,0,0,.35)}
+.radar-col-menu:not([hidden]){display:grid;gap:2px}
+.radar-col-menu-heading{font-size:9px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);padding:7px 8px 3px}
+.radar-col-menu-divider{height:1px;background:var(--border-subtle);margin:4px 2px}
+.radar-filter-option{display:block;width:100%;border:0;border-radius:8px;background:transparent;color:var(--text-main);padding:9px 10px;font-size:10px;font-weight:800;text-align:left;cursor:pointer}
+.radar-filter-option:hover,.radar-filter-option[aria-selected="true"]{background:var(--bg-card-2);color:var(--accent-cyan)}
+@media(max-width:650px){.radar-mini-toolbar{padding:9px}.radar-search-wrap{max-width:none}}
+.radar-summary-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.radar-summary-card{min-height:74px;padding:12px 13px;border:1px solid var(--border-subtle);border-radius:12px;background:linear-gradient(145deg,color-mix(in srgb,var(--bg-card-2) 92%,transparent),color-mix(in srgb,var(--bg-card) 92%,transparent));position:relative;overflow:hidden}.radar-summary-card .rsc-icon{position:absolute;right:12px;top:13px;font-size:21px}.radar-summary-card .rsc-value{font-size:21px;font-weight:900;line-height:1}.radar-summary-card .rsc-label{font-size:11px;font-weight:800;margin-top:6px;color:var(--text-main)}.radar-summary-card .rsc-sub{font-size:9px;color:var(--text-muted);margin-top:3px}.radar-summary-card.cyan{border-color:rgba(34,211,238,.35)}.radar-summary-card.green{border-color:rgba(52,211,153,.35)}.radar-summary-card.purple{border-color:rgba(167,139,250,.35)}.radar-summary-card.blue{border-color:rgba(59,130,246,.35)}.radar-summary-card.orange{border-color:rgba(245,158,11,.35)}
+.radar-legend{display:flex;flex-wrap:wrap;gap:16px;padding:3px 5px 10px;font-size:10px;color:var(--text-muted)}.radar-legend span{display:inline-flex;align-items:center;gap:6px}.radar-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}.radar-table-scroll{border:1px solid var(--border-subtle);border-radius:13px;background:color-mix(in srgb,var(--bg-card) 70%,transparent);position:relative}
+.radar-table-scroll{scrollbar-width:thin;scrollbar-color:var(--accent-cyan) transparent}
+.radar-table-scroll::-webkit-scrollbar{height:10px}
+.radar-table-scroll::-webkit-scrollbar-track{background:color-mix(in srgb,var(--bg-card-2) 80%,transparent)}
+.radar-table-scroll::-webkit-scrollbar-thumb{background:var(--accent-cyan);border-radius:999px}
+.radar-table-scroll table{min-width:760px!important;font-size:10.5px!important}.radar-table-scroll th{padding:6px 5px!important;color:var(--text-muted);font-size:8.5px!important;letter-spacing:.02em;border-bottom:1px solid var(--border-subtle)}.radar-table-scroll td{padding:6px 5px!important;border-top:1px solid color-mix(in srgb,var(--border-subtle) 70%,transparent)}.radar-rank{font-weight:900;color:var(--text-muted)}.radar-score-pill{display:inline-flex;min-width:31px;justify-content:center;padding:4px 8px;border-radius:999px;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.35);color:#6ee7b7;font-weight:900}
+html[data-mode="light"] .radar-score-pill,html[data-mode="system"]:not([data-mode="dark"]) .radar-score-pill{color:#065f46}
+@media(prefers-color-scheme:dark){html[data-mode="system"] .radar-score-pill{color:#6ee7b7}}.radar-action-btn{border:0;background:transparent;color:#c084fc;font-weight:900;cursor:pointer;font-size:13px}.radar-pagination{padding-top:9px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:1100px){.radar-summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.radar-heading{align-items:flex-start;flex-direction:column}.radar-date-block{justify-content:flex-start}}@media(max-width:650px){.radar-summary-grid{grid-template-columns:1fr 1fr}.radar-date-block{gap:8px}.radar-title-wrap h2{font-size:18px}}@media(max-width:430px){.radar-summary-grid{grid-template-columns:1fr}}
+.radar-legend .legend-confirmed{background:#34d399}.radar-legend .legend-starting{background:#22d3ee}.radar-legend .legend-mixed{background:#f2b134}.radar-legend .legend-distribution{background:#e2626b}</style>
+</head>
+<body data-vikram-page="home">
+<header class="navbar">
+  <div class="brand-lockup"><span class="brand-icon">V</span><span class="brand-name">VIKRAM</span><span class="nav-tagline">RESEARCH · ANALYZE · INVEST</span></div>
+  <button class="header-search-shortcut" type="button" id="headerSearchShortcut" title="Jump to search">
+    <span class="hss-icon">🔍</span><span class="hss-text">Search stocks, sectors, or symbols…</span><span class="hss-kbd">Ctrl K</span>
+  </button>
+  <div class="nav-spacer"></div>
+  <div class="theme-wrap">
+    <button id="themeMenuBtn" class="theme-menu-btn" type="button" aria-haspopup="true" aria-expanded="false"><span id="modeIconBtn">☀</span> Aurora ▾</button>
+    <div id="themeMenu" class="theme-menu" hidden>
+      <div class="mode-row"><span>Dark <strong id="modeLabel">Light</strong></span><label class="switch"><input id="modeCheckbox" type="checkbox" aria-label="Dark mode"><span class="slider"></span></label></div>
+    </div>
+  </div>
+  <button class="nav-icon-btn" type="button" title="Notifications — not available yet" aria-label="Notifications, not available yet">🔔</button>
+  <div class="nav-stat-group" role="group" aria-label="Progress stats — not tracked yet">
+    <span class="nav-stat" title="No streak/activity backend exists yet">🔥 <b>—</b> Day Streak</span>
+    <span class="nav-stat" title="No research-points backend exists yet">⭐ <b>—</b> Research Points</span>
+    <span class="nav-stat" title="No coins/rewards backend exists yet">🪙 <b>—</b> Coins</span>
+  </div>
+  <div class="profile-badge"><span class="avatar">A</span><span>Aditya Varma</span></div>
+</header>
+
+<div class="workspace-layout">
+  <aside class="sidebar">
+    <section class="side-section">
+      <div class="side-label">PRIMARY</div>
+      <a class="side-link active" href="index.html">⌂ Home</a>
+      <a class="side-link" href="#companyOverview">◉ Research</a>
+      <a class="side-link" href="#opportunityRadar">◈ Opportunity Radar</a>
+      <a class="side-link" href="scanner.html">⚙ Stock Scanner</a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet — no F&amp;O data source exists in VIKRAM">F&amp;O Analytics <span class="soon-pill">SOON</span></a>
+      <a class="side-link" href="#watchlist">Watchlist</a>
+      <a class="side-link" href="#portfolio">▣ Portfolio</a>
+    </section>
+    <section class="side-section">
+      <div class="side-label">ADVANCED</div>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet — backtesting engine doesn't exist in VIKRAM">Backtest <span class="soon-pill">SOON</span></a>
+      <a class="side-link" href="market-intelligence.html">Market Insights <span class="new-pill">NEW</span></a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet — no sector-level data pipeline exists in VIKRAM">Sector Analysis <span class="soon-pill">SOON</span></a>
+      <a class="side-link" href="discover.html">◈ Discover / Screeners</a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet — no news/events ingestion exists in VIKRAM">News &amp; Events <span class="soon-pill">SOON</span></a>
+      <a class="side-link" href="academy.html">Learning Hub <span class="new-pill">NEW</span></a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet">Tools &amp; Calculators <span class="soon-pill">SOON</span></a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet">Reports <span class="soon-pill">SOON</span></a>
+      <a class="side-link side-link--soon" href="#" aria-disabled="true" tabindex="-1" title="Not built yet">Community <span class="soon-pill">SOON</span></a>
+      <a class="side-link" href="#settings">Settings</a>
+      <a class="side-link" href="about.html">Help &amp; Support</a>
+    </section>
+    <section class="side-section">
+      <div class="side-label">MORE</div>
+      <a class="side-link" href="performance-lab.html">Performance Lab <span class="new-pill">NEW</span></a>
+      <a class="side-link" href="#hiddenGems">◆ Hidden Gems</a>
+      <a class="side-link" href="index.html#scannerSurface">◒ Accumulation Scanner</a>
+      <a class="side-link" href="research.html">◷ 1 Year Research</a>
+      <a class="side-link" href="alerts.html">Alerts</a>
+      <a class="side-link" href="nse-data.html">NSE Data &amp; Research</a>
+    </section>
+    <section class="side-section" style="display:none">
+      <div class="side-label">DISCOVER</div>
+      <a class="side-link" href="#vikramLite">VIKRAM Lite <span class="new-pill">NEW</span></a>
+      <a class="side-link" href="#marketInsights">Market Insights</a>
+      <a class="side-link" href="#learningHub">Learning Hub</a>
+      <a class="side-link" href="#analytics">Analytics</a>
+      <a class="side-link" href="#settings">Settings</a>
+    </section>
+    <div class="quote-card"><p>“Better Information Brings Better Decisions.”</p><strong>— VIKRAM</strong></div>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero-panoramic aurora-hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">GOOD MORNING</span>
+        <h1>Aditya Vikram Varma</h1>
+        <p>Smarter Research. Better Decisions. Research. Understand. Decide. Monitor. — using only verified NSE evidence; nothing here is simulated or estimated.</p>
+        <form class="hero-search" id="heroSearchForm">
+          <input id="symbolSearchInput" type="text" autocomplete="off" placeholder="Search NSE symbol or company name">
+          <button id="searchSubmitBtn" type="submit">Search</button>
+          <div id="searchSuggestions" class="suggestions-dropdown" hidden></div>
+        </form>
+        <div class="popular" aria-label="Popular tickers">
+          <button class="ticker-pill" data-symbol="TCS">TCS</button><button class="ticker-pill" data-symbol="RELIANCE">RELIANCE</button><button class="ticker-pill" data-symbol="HDFCBANK">HDFCBANK</button><button class="ticker-pill" data-symbol="INFY">INFY</button><button class="ticker-pill" data-symbol="ICICIBANK">ICICIBANK</button><button class="ticker-pill" data-symbol="LT">LT</button><button class="ticker-pill" data-symbol="SBIN">SBIN</button><button class="ticker-pill" data-symbol="BHARTIARTL">BHARTIARTL</button>
+        </div>
+      </div>
+      <div class="hero-slogan">Discipline Today, Wealth Tomorrow</div>
+    </section>
+
+    <section class="market-live-panel" id="marketInsights">
+      <div class="mlp-head">
+        <div class="mlp-title">○ <b>Market Live</b> <span class="mlp-unavailable-badge" title="No live NSE feed is connected yet">Unavailable</span></div>
+        <div class="mlp-right">
+          <span class="mlp-date" id="marketLiveDate">—</span>
+          <div class="mlp-exchange-tabs" role="group" aria-label="Exchange (not connected)">
+            <button type="button" class="mlp-exchange active" disabled title="No live feed connected">NSE</button>
+            <button type="button" class="mlp-exchange" disabled title="No live feed connected">BSE</button>
+            <button type="button" class="mlp-exchange" disabled title="No live feed connected">Global</button>
+          </div>
+        </div>
+      </div>
+      <div class="indices-grid">
+        <article class="index-card"><span>NIFTY 50</span><strong>N/A</strong><div class="delta na">Verified index feed unavailable</div></article>
+        <article class="index-card"><span>SENSEX</span><strong>N/A</strong><div class="delta na">Verified index feed unavailable</div></article>
+        <article class="index-card"><span>NIFTY 500</span><strong>N/A</strong><div class="delta na">Verified index feed unavailable</div></article>
+        <article class="index-card"><span>NIFTY BANK</span><strong>N/A</strong><div class="delta na">Verified index feed unavailable</div></article>
+        <article class="index-card"><span>NIFTY MIDCAP 100</span><strong>N/A</strong><div class="delta na">Verified index feed unavailable</div></article>
+      </div>
+      <div class="mlp-movers">
+        <span><b>Top Gainers:</b> Not available — no live feed connected</span>
+        <span><b>Top Losers:</b> Not available — no live feed connected</span>
+      </div>
+      <a class="mlp-dashboard-btn" href="market-intelligence.html">View Market Dashboard →</a>
+    </section>
+
+    <section class="aurora-primary-cards">
+      <a class="aurora-card aurora-card--research" href="#companyOverview"><div><h3>Research Stocks</h3><p>Get verified evidence and the VIKRAM Score for any covered NSE stock.</p></div><span class="cta">Start Research →</span></a>
+      <div class="aurora-card aurora-card--ai aurora-card--soon" aria-disabled="true" title="Not built yet — no AI/chat backend exists in VIKRAM"><div><h3>Ask VIKRAM AI</h3><p>Conversational stock insights. Not available yet — no AI backend is wired up.</p></div><span class="cta">Not available</span></div>
+      <a class="aurora-card aurora-card--discover" href="discover.html"><div><h3>Scan Opportunities</h3><p>Explore the Accumulation Scanner, Hidden Gems and Opportunity Radar.</p></div><span class="cta">Explore →</span></a>
+      <div class="aurora-card aurora-card--fo aurora-card--soon" aria-disabled="true" title="Not built yet — no F&O data source exists in VIKRAM"><div><h3>F&amp;O Analytics</h3><p>Futures &amp; options, open interest analysis. Not available yet — no F&amp;O data source is wired up.</p></div><span class="cta">Not available</span></div>
+      <a class="aurora-card aurora-card--portfolio" href="#portfolio"><div><h3>Track Your Portfolio</h3><p>Monitor holdings you've added — stored locally in your browser only.</p></div><span class="cta">View Portfolio →</span></a>
+    </section>
+
+    <section class="aurora-grid-3" style="margin-top:18px">
+      <div class="aurora-section aurora-section--sm" id="researchProgress">
+        <div class="section-head-row"><h2>Your Research Progress</h2><span class="progress-pct-locked">— %</span></div>
+        <div class="progress-track-locked"><div class="progress-fill-locked" style="width:0%"></div></div>
+        <div class="progress-substats">
+          <div><b>—</b><span>Research Added</span></div>
+          <div><b>—</b><span>Day Streak</span></div>
+          <div><b>—</b><span>Points Earned</span></div>
+          <div><b>—</b><span>Level</span></div>
+        </div>
+        <p class="honest-note">No research-progress backend exists yet — nothing here is tracked.</p>
+      </div>
+      <div class="aurora-section aurora-section--sm" id="watchlistHighlights">
+        <div class="section-head-row"><h2>Watchlist Highlights</h2><a href="#watchlist" class="view-all-link">View All</a></div>
+        <p class="honest-note" style="margin-top:28px">No watchlist stocks yet — the Watchlist feature isn't built yet in VIKRAM.</p>
+      </div>
+      <div class="aurora-section aurora-section--sm" id="todaysPlan">
+        <div class="section-head-row"><h2>Today's Plan</h2><a href="#" class="view-all-link" aria-disabled="true">View All</a></div>
+        <p class="honest-note" style="margin-top:28px">No tasks yet — task planning isn't built yet in VIKRAM.</p>
+      </div>
+    </section>
+
+    <section class="aurora-grid-2" style="margin-top:18px">
+      <div class="aurora-section aurora-section--sm">
+        <div class="section-head-row"><h2>VIKRAM Recommends for You</h2><a href="#" class="view-all-link" aria-disabled="true">View All</a></div>
+        <div class="recommend-row">
+          <div class="recommend-card"><span class="rc-eyebrow">Focus Theme</span><b>—</b><p class="honest-note">Recommendation engine not available yet.</p></div>
+          <div class="recommend-card"><span class="rc-eyebrow">Your Strength</span><b>—</b><p class="honest-note">Recommendation engine not available yet.</p></div>
+          <div class="recommend-card"><span class="rc-eyebrow">New for You</span><b>—</b><p class="honest-note">Recommendation engine not available yet.</p></div>
+        </div>
+      </div>
+      <div class="aurora-section aurora-section--sm">
+        <div class="section-head-row"><h2>Your Achievements</h2><a href="#" class="view-all-link" aria-disabled="true">View All</a></div>
+        <div class="achievement-row">
+          <div class="achievement-badge locked" title="No achievement rules or activity history exist yet">🔥<span>7 Day Streak</span></div>
+          <div class="achievement-badge locked" title="No achievement rules or activity history exist yet">👑<span>Research Pro</span></div>
+          <div class="achievement-badge locked" title="No achievement rules or activity history exist yet">📈<span>Top 10% Analyst</span></div>
+          <div class="achievement-badge locked" title="No achievement rules or activity history exist yet">⭐<span>Insight Master</span></div>
+        </div>
+        <p class="honest-note">No achievement rules or activity history exist yet — all locked.</p>
+      </div>
+    </section>
+
+
+    <section class="aurora-grid-2" style="margin-top:18px">
+      <div class="aurora-section" id="todaysFocus">
+        <h2>Today's Focus</h2>
+        <p class="desc">The highest-scoring real signals from the current scanner dataset — not a curated pick, just the top of the verified list.</p>
+        <div id="todaysFocusBody"><p class="desc">Loading…</p></div>
+      </div>
+      <div class="aurora-section" id="investorGpsPreview">
+        <h2>Investor GPS <span style="font-weight:400;color:var(--aurora-text-muted);font-size:.8rem">(Preview)</span></h2>
+        <p class="desc">NOT YET IMPLEMENTED. Investor GPS requires Business Quality, Financial Health, and Institutional Activity scoring — none of these data sources exist in VIKRAM yet. This card is a placeholder, not a fabricated score.</p>
+      </div>
+    </section>
+
+    <section class="aurora-section" id="dataTrustPanel">
+      <h2>Data Trust &amp; Freshness</h2>
+      <p class="desc">Real status, computed from the same data the scanner uses — see <a href="nse-data.html" style="color:var(--aurora-gps)">NSE Data &amp; Research</a> for full detail.</p>
+      <div id="dataTrustBody" class="aurora-grid-3"><p class="desc">Loading…</p></div>
+    </section>
+
+    <section class="aurora-section" id="latestInsights">
+      <h2>Latest Insights</h2>
+      <p class="desc">NOT YET IMPLEMENTED — VIKRAM has no news/sector-commentary feed yet. This section intentionally shows nothing fabricated rather than invented headlines.</p>
+    </section>
+
+    <section class="scanner-container-surface vikram-radar-surface" id="scannerSurface">
+      <div class="surface-tabs" role="tablist">
+        <button class="surface-tab active" type="button" role="tab" aria-selected="true">★ Top Opportunities</button>
+        <button class="surface-tab" type="button" role="tab" aria-selected="false" disabled title="Not available yet">♙ Watchlist</button>
+        <button class="surface-tab" type="button" role="tab" aria-selected="false" disabled title="Not available yet">♙ My Portfolio</button>
+        <button class="surface-tab" type="button" role="tab" aria-selected="false" disabled title="Not available yet">♙ Sector View</button>
+        <button class="surface-tab" type="button" role="tab" aria-selected="false" disabled title="Not available yet">☆ Market News</button>
+      </div>
+      <div class="radar-heading">
+        <div class="radar-title-wrap">
+          <div class="radar-icon" aria-hidden="true">🎯</div>
+          <div><h2>Opportunity Radar</h2><p>Cross-factor candidates from the verified Accumulation Scanner · score 75+ · evidence-driven opportunities</p></div>
+        </div>
+        <div class="radar-date-block">
+          <span>Scanner Data Date: <strong id="scannerDataDate">—</strong></span>
+          <span>Data Age: <strong id="scannerDataAge">—</strong></span>
+          <span class="radar-verified-badge">EOD VERIFIED</span>
+        </div>
+      </div>
+
+      <div class="radar-mini-toolbar" aria-label="Universe and search">
+        <select id="universeFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All Stocks</option><option value="NIFTY 50">Nifty 50</option><option value="NIFTY 200">Nifty 200</option><option value="NIFTY 500">Nifty 500</option></select>
+        <select id="verdictFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All Verdicts</option><option value="ACCUMULATION CONFIRMED">Confirmed</option><option value="ACCUMULATION STARTING">Starting</option><option value="UNCONFIRMED / MIXED">Unconfirmed / Mixed</option><option value="DISTRIBUTION">Distribution</option></select>
+        <select id="scoreFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="0">Any</option><option value="75">≥ 75</option><option value="55">≥ 55</option><option value="50">≥ 50</option></select>
+        <select id="sortSelect" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="score:desc">Score – High to Low</option><option value="score:asc">Score – Low to High</option><option value="close:desc">Price – High to Low</option><option value="close:asc">Price – Low to High</option><option value="priceChangePct:desc">Today's Change – High to Low</option><option value="priceChangePct:asc">Today's Change – Low to High</option><option value="volumeRatio:desc">Volume – High to Low</option><option value="volumeRatio:asc">Volume – Low to High</option><option value="deliveryPct:desc">Delivery – High to Low</option><option value="deliveryPct:asc">Delivery – Low to High</option><option value="futuresOi:desc">Futures OI – High to Low</option><option value="futuresOi:asc">Futures OI – Low to High</option><option value="changeOi:desc">OI Change – High to Low</option><option value="changeOi:asc">OI Change – Low to High</option><option value="symbol:asc">Stock – A to Z</option><option value="symbol:desc">Stock – Z to A</option></select>
+        <select id="obvFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All</option><option value="RISING">Rising</option><option value="FALLING">Falling</option><option value="FLAT">Flat</option></select>
+        <select id="volumeFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All</option><option value="BREAKOUT">Volume Breakout (≥ 2x avg)</option></select>
+        <select id="deliveryFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All</option><option value="HIGH">High Delivery (≥ 60%)</option></select>
+        <select id="oiChangeFilter" class="radar-native-select" data-radar-filter aria-hidden="true" tabindex="-1"><option value="ALL">All</option><option value="BUILDUP">OI Build-up (real data only)</option></select>
+        <div class="rsi-filter-bar" aria-label="RSI filters">
+        <span class="rsi-filter-bar-label">RSI Filters (informational — daily / weekly / monthly)</span>
+<select id="rsiDailyDirFilter" class="rsi-select" data-rsi-filter aria-label="Daily RSI direction"><option value="ALL">Daily RSI: All</option><option value="RISING">Daily RSI: Rising</option><option value="FALLING">Daily RSI: Falling</option><option value="FLAT">Daily RSI: Flat</option></select>
+        <select id="rsiWeeklyDirFilter" class="rsi-select" data-rsi-filter aria-label="Weekly RSI direction"><option value="ALL">Weekly RSI: All</option><option value="RISING">Weekly RSI: Rising</option><option value="FALLING">Weekly RSI: Falling</option><option value="FLAT">Weekly RSI: Flat</option></select>
+        <select id="rsiMonthlyDirFilter" class="rsi-select" data-rsi-filter aria-label="Monthly RSI direction"><option value="ALL">Monthly RSI: All</option><option value="RISING">Monthly RSI: Rising</option><option value="FALLING">Monthly RSI: Falling</option><option value="FLAT">Monthly RSI: Flat</option></select>
+        <select id="rsiAlignmentFilter" class="rsi-select" data-rsi-filter aria-label="RSI multi-timeframe alignment"><option value="NONE">RSI Alignment: None</option><option value="ALL_RISING">All Timeframes Rising</option><option value="ALL_FALLING">All Timeframes Falling</option><option value="DW_RISING">Daily + Weekly Rising</option><option value="WM_RISING">Weekly + Monthly Rising</option><option value="DWM_RISING">Daily + Weekly + Monthly Rising</option></select>
+        <select id="rsiDailyZoneFilter" class="rsi-select" data-rsi-filter aria-label="Daily RSI zone"><option value="ALL">Daily RSI Zone: All</option><option value="OVERSOLD">Daily: Oversold (&lt;30)</option><option value="WEAK_RECOVERY">Daily: Weak/Recovery (30–50)</option><option value="POSITIVE_MOMENTUM">Daily: Positive Momentum (50–70)</option><option value="OVERBOUGHT">Daily: Overbought (≥70)</option></select>
+        <select id="rsiWeeklyZoneFilter" class="rsi-select" data-rsi-filter aria-label="Weekly RSI zone"><option value="ALL">Weekly RSI Zone: All</option><option value="OVERSOLD">Weekly: Oversold (&lt;30)</option><option value="WEAK_RECOVERY">Weekly: Weak/Recovery (30–50)</option><option value="POSITIVE_MOMENTUM">Weekly: Positive Momentum (50–70)</option><option value="OVERBOUGHT">Weekly: Overbought (≥70)</option></select>
+        <select id="rsiMonthlyZoneFilter" class="rsi-select" data-rsi-filter aria-label="Monthly RSI zone"><option value="ALL">Monthly RSI Zone: All</option><option value="OVERSOLD">Monthly: Oversold (&lt;30)</option><option value="WEAK_RECOVERY">Monthly: Weak/Recovery (30–50)</option><option value="POSITIVE_MOMENTUM">Monthly: Positive Momentum (50–70)</option><option value="OVERBOUGHT">Monthly: Overbought (≥70)</option></select>
+        <select id="rsiRangeTimeframe" class="rsi-select" data-rsi-filter aria-label="RSI numeric range timeframe"><option value="DAILY">RSI Range: Daily</option><option value="WEEKLY">RSI Range: Weekly</option><option value="MONTHLY">RSI Range: Monthly</option></select>
+        <input id="rsiRangeMin" type="number" min="0" max="100" step="0.01" placeholder="Min RSI" class="rsi-input" data-rsi-filter aria-label="Minimum RSI">
+        <input id="rsiRangeMax" type="number" min="0" max="100" step="0.01" placeholder="Max RSI" class="rsi-input" data-rsi-filter aria-label="Maximum RSI">
+        </div>
+        <div class="radar-universe-row">
+          <div class="radar-universe-pills" role="group" aria-label="NSE universe">
+            <button type="button" class="radar-universe-pill" data-universe-value="ALL">All NSE Stocks</button>
+            <button type="button" class="radar-universe-pill" data-universe-value="NIFTY 50">NIFTY 50</button>
+            <button type="button" class="radar-universe-pill" data-universe-value="NIFTY 200">NIFTY 200</button>
+            <button type="button" class="radar-universe-pill" data-universe-value="NIFTY 500">NIFTY 500</button>
+          </div>
+          <div class="radar-universe-status"><strong id="universeStatusLine">—</strong><small>EOD VERIFIED</small></div>
+        </div>
+        <p class="radar-universe-note">NIFTY 100 / Next 50 / Midcap 150 / Smallcap 250 / Microcap 250 / Total Market, and F&amp;O-only / Cash-only filters: <strong>DATA NOT AVAILABLE</strong> — VIKRAM's index-membership source (server/src/indexUniverses.js) currently fetches only NIFTY 50/200/500 constituent lists. Not shown rather than faked.</p>
+        <div class="radar-search-wrap"><label class="sr-only" for="tableSearch">Search</label><span class="radar-search-icon">⌕</span><input id="tableSearch" type="search" placeholder="Search symbol or company name..." aria-label="Search symbol or company name"></div>
+      </div>
+      <div class="radar-filter-actions"><span id="filterMatchCount" class="filter-match-count">All verified stocks</span><button id="clearScannerFilters" class="clear-filters-btn" type="button">Reset filters</button></div>
+
+      <div id="scannerSummaryCards" class="radar-summary-grid" style="margin:14px 0"></div>
+      <div id="verdictLegend" class="radar-legend" aria-label="Verdict legend"></div>
+
+      <div class="table-scroll radar-table-scroll" id="radarTableScroll" style="overflow-x:auto">
+        <div id="scannerCards" class="discovery-card-list"><p class="empty-cell">Loading verified scanner snapshot…</p></div>
+      </div>
+      <div id="tablePagination" class="scanner-meta radar-pagination" style="justify-content:space-between"></div>
+    </section>
+
+    <section id="companyOverview" class="company-overview">
+      <div class="overview-card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:end"><div><span class="eyebrow">RESEARCH</span><h2 id="overviewCompanyName" style="margin:6px 0">Company Overview</h2></div><strong id="overviewRating">N/A</strong></div><div class="overview-grid" style="margin-top:14px"><div class="metric"><span>VIKRAM SCORE</span><strong id="overviewVikramScore">N/A</strong></div><div class="metric"><span>Current Price</span><strong id="overviewCurrentPrice">N/A</strong></div><div class="metric"><span>Sector</span><strong id="overviewSector">N/A</strong></div><div class="metric"><span>Industry</span><strong id="overviewIndustry">N/A</strong></div><div class="metric"><span>Exchange</span><strong id="overviewExchange">NSE</strong></div><div class="metric"><span>Market Cap</span><strong id="overviewMarketCap">N/A</strong></div><div class="metric"><span>52W High</span><strong id="overview52WeekHigh">N/A</strong></div><div class="metric"><span>52W Low</span><strong id="overview52WeekLow">N/A</strong></div></div></div>
+    </section>
+    <section id="opportunityRadar" class="overview-card" style="margin-top:18px"><h2>Opportunity Radar</h2><p style="color:var(--text-muted)">Cross-factor opportunities from the same verified scanner data above — no separate score, no new data source.</p>
+      <select id="radarCategory" style="margin:8px 0"><option value="ALL">All</option><option value="CONFIRMED">Confirmed</option><option value="STARTING">Starting</option><option value="VOLUME_BREAKOUT">Volume Breakout</option><option value="HIGH_DELIVERY">High Delivery</option><option value="OI_BUILD_UP">OI Build-Up</option></select>
+      <div id="radarList"></div>
+    </section>
+    <section id="hiddenGems" class="overview-card" style="margin-top:18px"><h2>Hidden Gems <span class="research-badge">RESEARCH — NOT VALIDATED</span></h2>
+      <p style="color:var(--text-muted)">Every threshold here is provisional and has not been backtested (see docs/hidden-gems/). This is NOT a trading signal or recommendation. Institutional/news evidence is genuinely unavailable, so most results honestly read DATA INSUFFICIENT rather than a fabricated classification.</p>
+      <div id="hiddenGemsMeta" class="research-meta" aria-live="polite"></div>
+      <div id="hiddenGemsList"></div>
+      <p class="research-cta">Want to see how past ACCUMULATION CONFIRMED signals actually performed? <a href="research.html#asm">Open 1-Year Research → Accumulation Success Matrix</a></p>
+    </section>
+    <section id="portfolio" class="overview-card" style="margin-top:18px"><h2>Portfolio</h2><p style="color:var(--text-muted)">Verified values only; unavailable data remains N/A.</p></section>
+    <section id="vikramLite" class="overview-card" style="margin-top:18px"><h2>VIKRAM Lite</h2><p style="color:var(--text-muted)">Lightweight verified market view.</p></section>
+    <section id="learningHub" class="overview-card" style="margin-top:18px"><h2>Learning Hub</h2><p style="color:var(--text-muted)">Research education surface.</p></section>
+    <section id="analytics" class="overview-card" style="margin-top:18px"><h2>Analytics</h2><p style="color:var(--text-muted)">Aggregate statistics computed from the same verified scanner data above — no separate data source, no invented metrics.</p>
+      <div id="analyticsBody"></div>
+    </section>
+    <section id="settings" class="overview-card" style="margin-top:18px"><h2>Settings</h2><p style="color:var(--text-muted)">Use the Theme menu above to change the VIKRAM experience.</p>
+      <div id="liveDataStatus" class="text-muted" style="margin-top:8px">Live market data status: checking…</div>
+    </section>
+    <div id="loadingContainer" class="hidden"></div><div id="errorContainer" class="hidden"></div>
+  </main>
+
+  <aside class="right-feed">
+    <div class="feed-card"><h3>TODAY</h3><div class="date-big" id="feedDate">—</div><span class="market-status" id="marketStatusBadge">—</span></div>
+    <div class="feed-card"><div class="buffett">“Invest in what you understand.”<small>— Warren Buffett</small></div></div>
+    <div class="feed-card"><h3>MARKET BREADTH</h3><div class="breadth"><div class="donut donut--na" aria-label="Market breadth data not available"></div><div class="breadth-stats"><div><span>Advances</span><b>—</b></div><div><span>Declines</span><b>—</b></div><div><span>Unchanged</span><b>—</b></div></div></div><p class="honest-note" style="margin-top:8px">No live market-breadth feed connected yet.</p></div>
+    <div class="feed-card promo-card"><h3>Discipline Compounds Wealth</h3><p class="promo-quote">“Better research. Better decisions. A brighter tomorrow.”</p><span class="promo-arrow">→</span></div>
+  </aside>
+</div>
+
+<script src="js/universeMembership.js"></script>
+<script src="js/detectionHistoryView.js"></script>
+<script src="js/opportunityRadar.js"></script>
+<script src="js/researchIntelligence.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/tableControls.js"></script>
+<script src="js/verdictDisplay.js"></script>
+<script src="js/dataEngine.js"></script>
+<script type="module" src="js/themeEngine.js"></script>
+<script type="module" src="js/app.js"></script>
+<script>
+(() => {
+  const scannerCards = document.getElementById('scannerCards');
+  const search = document.getElementById('symbolSearchInput');
+  const headerSearchShortcut = document.getElementById('headerSearchShortcut');
+  document.querySelectorAll('a[aria-disabled="true"]').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+  if (headerSearchShortcut && search) {
+    headerSearchShortcut.addEventListener('click', () => {
+      search.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      search.focus();
+    });
+  }
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k' && search) {
+      e.preventDefault();
+      search.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      search.focus();
+    }
+  });
+  const suggestions = document.getElementById('searchSuggestions');
+  const universe = document.getElementById('universeFilter');
+  const universeStatusLine = document.getElementById('universeStatusLine');
+  const verdict = document.getElementById('verdictFilter');
+  const score = document.getElementById('scoreFilter');
+  let rows = [];
+  let indexUniverseStatus = 'DATA N/A';
+  let scannerAsOf = null;
+  // Canonical Research Intelligence (see backtest/lib/researchIntelligence.js /
+  // data/researchIntelligence.json / js/researchIntelligence.js). Populated once, alongside the
+  // scanner snapshot below, and consumed by Opportunity Radar's disclosure panel and the Hidden
+  // Gems static-evidence fallback — never blended into the live score/verdict.
+  let intelligenceMap = new Map();
+  let tablePage = 1;
+  const TABLE_PAGE_SIZE = 25; // Blueprint requirement: real pagination, 25 per page
+  const tableSearch = document.getElementById('tableSearch');
+  const tablePagination = document.getElementById('tablePagination');
+  const sortSelect = document.getElementById('sortSelect');
+  // Sorting is a SEPARATE control from filtering (universe/verdict/score selects below) — picking
+  // a sort option never changes which rows match, only their order. Picking a filter option never
+  // changes the order, only which rows are included. Each resets to page 1 since the result set
+  // has changed size/order.
+  if (tableSearch) tableSearch.addEventListener('input', () => { tablePage = 1; render(); });
+  if (sortSelect) sortSelect.addEventListener('change', () => { tablePage = 1; render(); });
+  // ==========================================================================
+  // RSI FILTERS — canonical, shared by ALL FOUR scanner surfaces.
+  // ==========================================================================
+  // RSI itself (row.rsi.{daily,weekly,monthly}) is pre-computed ONCE, offline,
+  // by the canonical engine (js/rsiEngine.js -> scripts/buildRsiSnapshot.js ->
+  // scripts/mergeRsiIntoScannerSnapshot.js) and merged additively into
+  // data/scanner.json. Every surface below reads that SAME row.rsi object —
+  // there is no second RSI calculator anywhere in this file. RSI is
+  // informational/research-filter only: it narrows which already-scored rows
+  // are shown and never touches r.score / r.verdict / r.confirmation.
+  const rsiFilterIds = ['rsiDailyDirFilter','rsiWeeklyDirFilter','rsiMonthlyDirFilter','rsiAlignmentFilter','rsiDailyZoneFilter','rsiWeeklyZoneFilter','rsiMonthlyZoneFilter','rsiRangeTimeframe','rsiRangeMin','rsiRangeMax'];
+  const rsiFilterEls = Object.fromEntries(rsiFilterIds.map(id => [id, document.getElementById(id)]));
+  function getRsiFilterState() {
+    return {
+      dailyDir: rsiFilterEls.rsiDailyDirFilter ? rsiFilterEls.rsiDailyDirFilter.value : 'ALL',
+      weeklyDir: rsiFilterEls.rsiWeeklyDirFilter ? rsiFilterEls.rsiWeeklyDirFilter.value : 'ALL',
+      monthlyDir: rsiFilterEls.rsiMonthlyDirFilter ? rsiFilterEls.rsiMonthlyDirFilter.value : 'ALL',
+      alignment: rsiFilterEls.rsiAlignmentFilter ? rsiFilterEls.rsiAlignmentFilter.value : 'NONE',
+      dailyZone: rsiFilterEls.rsiDailyZoneFilter ? rsiFilterEls.rsiDailyZoneFilter.value : 'ALL',
+      weeklyZone: rsiFilterEls.rsiWeeklyZoneFilter ? rsiFilterEls.rsiWeeklyZoneFilter.value : 'ALL',
+      monthlyZone: rsiFilterEls.rsiMonthlyZoneFilter ? rsiFilterEls.rsiMonthlyZoneFilter.value : 'ALL',
+      rangeTimeframe: rsiFilterEls.rsiRangeTimeframe ? rsiFilterEls.rsiRangeTimeframe.value : 'DAILY',
+      rangeMin: rsiFilterEls.rsiRangeMin ? String(rsiFilterEls.rsiRangeMin.value || '').trim() : '',
+      rangeMax: rsiFilterEls.rsiRangeMax ? String(rsiFilterEls.rsiRangeMax.value || '').trim() : ''
+    };
+  }
+  function rsiIsActive(s) {
+    return s.dailyDir !== 'ALL' || s.weeklyDir !== 'ALL' || s.monthlyDir !== 'ALL' || s.alignment !== 'NONE' ||
+      s.dailyZone !== 'ALL' || s.weeklyZone !== 'ALL' || s.monthlyZone !== 'ALL' || s.rangeMin !== '' || s.rangeMax !== '';
+  }
+  // Pure predicate — single source of truth for "does this row satisfy the
+  // currently-selected RSI filters". Missing RSI (null) NEVER matches a
+  // specific direction/zone/range condition; it only ever matches "All".
+  function rsiRowMatches(r, s) {
+    const rsi = (r && r.rsi) || {};
+    const d = rsi.daily || {}, w = rsi.weekly || {}, m = rsi.monthly || {};
+    if (s.dailyDir !== 'ALL' && d.direction !== s.dailyDir) return false;
+    if (s.weeklyDir !== 'ALL' && w.direction !== s.weeklyDir) return false;
+    if (s.monthlyDir !== 'ALL' && m.direction !== s.monthlyDir) return false;
+    if (s.dailyZone !== 'ALL' && d.zone !== s.dailyZone) return false;
+    if (s.weeklyZone !== 'ALL' && w.zone !== s.weeklyZone) return false;
+    if (s.monthlyZone !== 'ALL' && m.zone !== s.monthlyZone) return false;
+    if (s.alignment === 'ALL_RISING' && !(d.direction === 'RISING' && w.direction === 'RISING' && m.direction === 'RISING')) return false;
+    if (s.alignment === 'ALL_FALLING' && !(d.direction === 'FALLING' && w.direction === 'FALLING' && m.direction === 'FALLING')) return false;
+    if (s.alignment === 'DW_RISING' && !(d.direction === 'RISING' && w.direction === 'RISING')) return false;
+    if (s.alignment === 'WM_RISING' && !(w.direction === 'RISING' && m.direction === 'RISING')) return false;
+    if (s.alignment === 'DWM_RISING' && !(d.direction === 'RISING' && w.direction === 'RISING' && m.direction === 'RISING')) return false;
+    if (s.rangeMin !== '' || s.rangeMax !== '') {
+      const tf = s.rangeTimeframe === 'WEEKLY' ? w : s.rangeTimeframe === 'MONTHLY' ? m : d;
+      const v = tf.value;
+      if (v == null) return false; // N/A never accidentally passes a numeric range filter
+      if (s.rangeMin !== '' && v < Number(s.rangeMin)) return false;
+      if (s.rangeMax !== '' && v > Number(s.rangeMax)) return false;
+    }
+    return true;
+  }
+  rsiFilterIds.forEach(id => { const el = rsiFilterEls[id]; if (el) el.addEventListener(id.includes('Range') && id !== 'rsiRangeTimeframe' ? 'input' : 'change', () => { tablePage = 1; render(); renderOpportunityRadar(); renderHiddenGems(); }); });
+
+  const obvFilter = document.getElementById('obvFilter');
+  const volumeFilter = document.getElementById('volumeFilter');
+  const deliveryFilter = document.getElementById('deliveryFilter');
+  const oiChangeFilter = document.getElementById('oiChangeFilter');
+  [obvFilter, volumeFilter, deliveryFilter, oiChangeFilter].forEach(el => { if (el) el.addEventListener('change', () => { tablePage = 1; render(); }); });
+
+  // ==========================================================================
+  // Column-header menus \u2014 THE ONLY filter/sort UI for the Opportunity Radar
+  // table (the old separate Verdict/Score/Sort bar above the table is gone).
+  // Every entry below either points at an EXISTING canonical <select> (Verdict,
+  // Score, Sort) or, for the four new filters (OBV Trend, Volume Breakout,
+  // High Delivery, OI Build-up), at a value/semantic ALREADY computed and
+  // unit-tested elsewhere in this codebase:
+  //   - OBV Trend Rising/Falling/Flat: the exact sign test already used to
+  //     render this column's "\u2197 Rising / \u2198 Falling / \u2192 Flat" text below.
+  //   - Volume Breakout (>=2x), High Delivery (>=60%), OI Build-up (>0):
+  //     the exact thresholds already defined and tested in
+  //     js/opportunityRadar.js's categoriesFor() (VOLUME_BREAKOUT/HIGH_DELIVERY/
+  //     OI_BUILD_UP), reused here rather than inventing new ones.
+  // STOCK / PRICE / TODAY / FUTURES OI have no existing filter model anywhere
+  // in the codebase \u2014 they are sort-only by design, not an oversight; see the
+  // written report for why each one stops at sort rather than inventing a
+  // filter bucket. RANK and ACTIONS are not data fields and are not interactive.
+  // ==========================================================================
+  const COLUMN_MENUS = {
+    verdict:   { label: 'VERDICT',      filterSelectId: 'verdictFilter' },
+    score:     { label: 'SCORE',        filterSelectId: 'scoreFilter', sortKey: 'score' },
+    stock:     { label: 'STOCK',        sortKey: 'symbol' },
+    price:     { label: 'PRICE \u20b9',      sortKey: 'close' },
+    today:     { label: 'TODAY',        sortKey: 'priceChangePct' },
+    volume:    { label: 'VOLUME',       filterSelectId: 'volumeFilter', sortKey: 'volumeRatio' },
+    delivery:  { label: 'DELIV %',      filterSelectId: 'deliveryFilter', sortKey: 'deliveryPct' },
+    obv:       { label: 'OBV',          filterSelectId: 'obvFilter' },
+    futuresOi: { label: 'FUT. OI',      sortKey: 'futuresOi' },
+    oiChange:  { label: 'OI CHG',       filterSelectId: 'oiChangeFilter', sortKey: 'changeOi' }
+  };
+  const SORT_LABELS = {
+    symbol: ['Stock: A \u2192 Z', 'Stock: Z \u2192 A'],
+    close: ['Price: High \u2192 Low', 'Price: Low \u2192 High'],
+    score: ['Score: High \u2192 Low', 'Score: Low \u2192 High'],
+    priceChangePct: ["Today's Change: High \u2192 Low", "Today's Change: Low \u2192 High"],
+    volumeRatio: ['Volume: High \u2192 Low', 'Volume: Low \u2192 High'],
+    deliveryPct: ['Delivery: High \u2192 Low', 'Delivery: Low \u2192 High'],
+    futuresOi: ['Futures OI: High \u2192 Low', 'Futures OI: Low \u2192 High'],
+    changeOi: ['OI Change: High \u2192 Low', 'OI Change: Low \u2192 High']
+  };
+
+  // ONE shared menu element, appended once to <body> as position:fixed and repositioned under
+  // whichever header was clicked. Deliberately NOT nested inside the horizontally-scrolling table
+  // wrapper (.radar-table-scroll{overflow-x:auto}) \u2014 an absolutely-positioned descendant of an
+  // overflow-x:auto container is still clipped by it, which is exactly what would happen to menus
+  // opened from the right-hand columns (OI CHANGE, VERDICT) if this lived inside the table. Being
+  // outside it and position:fixed, with its position computed and clamped to the viewport in
+  // positionColMenu(), is what satisfies "must not be clipped / must not render outside the
+  // viewport" at any column and any width. Only one instance exists, so only one menu can ever be
+  // open at a time by construction.
+  let colMenuEl = null, colMenuOpenKey = null, colMenuOpts = [], colMenuOpenTh = null;
+  function ensureColMenuEl() {
+    if (colMenuEl) return colMenuEl;
+    colMenuEl = document.createElement('div');
+    colMenuEl.id = 'radarColumnMenu';
+    colMenuEl.className = 'radar-col-menu';
+    colMenuEl.setAttribute('role', 'listbox');
+    colMenuEl.hidden = true;
+    document.body.appendChild(colMenuEl);
+    return colMenuEl;
+  }
+  function closeColMenu() {
+    if (!colMenuEl) return;
+    colMenuEl.hidden = true;
+    colMenuOpenKey = null;
+    colMenuOpenTh = null;
+    document.querySelectorAll('th[data-col-menu][aria-expanded="true"]').forEach(t => t.setAttribute('aria-expanded', 'false'));
+  }
+  function buildColMenuOptions(key) {
+    const cfg = COLUMN_MENUS[key];
+    const opts = [];
+    if (!cfg) return opts;
+    if (cfg.filterSelectId) {
+      const sel = document.getElementById(cfg.filterSelectId);
+      if (sel) Array.from(sel.options).forEach(o => opts.push({
+        group: 'filter', text: o.textContent, active: o.value === sel.value,
+        onSelect: () => { sel.value = o.value; sel.dispatchEvent(new Event('change')); }
+      }));
+    }
+    if (cfg.sortKey && sortSelect) {
+      const [curKey, curDir] = (sortSelect.value || 'score:desc').split(':');
+      const labels = SORT_LABELS[cfg.sortKey] || [cfg.label + ': high to low', cfg.label + ': low to high'];
+      ['desc', 'asc'].forEach((dir, i) => {
+        const value = `${cfg.sortKey}:${dir}`;
+        if (![...sortSelect.options].some(o => o.value === value)) return; // no matching option: never diverge from the canonical select
+        opts.push({ group: 'sort', text: labels[i], active: curKey === cfg.sortKey && curDir === dir, onSelect: () => { sortSelect.value = value; sortSelect.dispatchEvent(new Event('change')); } });
+      });
+    }
+    return opts;
+  }
+  function positionColMenu(th) {
+    if (!colMenuEl || colMenuEl.hidden) return;
+    const r = th.getBoundingClientRect();
+    const menuW = Math.max(colMenuEl.offsetWidth, 200);
+    const left = Math.min(Math.max(8, r.left), Math.max(8, window.innerWidth - menuW - 8));
+    let top = r.bottom + 4;
+    if (top + colMenuEl.offsetHeight > window.innerHeight - 8) top = Math.max(8, r.top - colMenuEl.offsetHeight - 4);
+    colMenuEl.style.left = left + 'px';
+    colMenuEl.style.top = top + 'px';
+  }
+  function openColMenu(th, key) {
+    const cfg = COLUMN_MENUS[key];
+    if (!cfg) return;
+    const menu = ensureColMenuEl();
+    colMenuOpts = buildColMenuOptions(key);
+    let html = ''; let lastGroup = null;
+    colMenuOpts.forEach(o => {
+      if (o.group !== lastGroup) { if (lastGroup !== null) html += '<div class="radar-col-menu-divider"></div>'; html += `<div class="radar-col-menu-heading">${o.group === 'sort' ? 'Sort' : 'Filter'}</div>`; }
+      lastGroup = o.group;
+      html += `<button type="button" class="radar-filter-option" role="option" aria-selected="${o.active}">${esc(o.text)}</button>`;
+    });
+    menu.innerHTML = html || '<div class="radar-col-menu-heading">No options for this column</div>';
+    Array.from(menu.querySelectorAll('.radar-filter-option')).forEach((btn, i) => btn.addEventListener('click', e => {
+      e.stopPropagation();
+      colMenuOpts[i].onSelect();
+      tablePage = 1;
+      closeColMenu();
+      render();
+    }));
+    menu.hidden = false;
+    colMenuOpenKey = key;
+    colMenuOpenTh = th;
+    th.setAttribute('aria-expanded', 'true');
+    positionColMenu(th);
+  }
+  function toggleColMenu(th, key) {
+    if (colMenuOpenKey === key) { closeColMenu(); return; }
+    openColMenu(th, key);
+  }
+  if (scannerCards) {
+    scannerCards.addEventListener('click', e => {
+      const th = e.target.closest('th[data-col-menu]');
+      if (th) toggleColMenu(th, th.getAttribute('data-col-menu'));
+    });
+    scannerCards.addEventListener('keydown', e => {
+      const th = e.target.closest('th[data-col-menu]');
+      if (!th) return;
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleColMenu(th, th.getAttribute('data-col-menu')); }
+      else if (e.key === 'Escape' && colMenuOpenKey) { e.preventDefault(); closeColMenu(); }
+    });
+  }
+  document.addEventListener('click', e => { if (colMenuEl && !colMenuEl.hidden && !e.target.closest('.radar-col-menu') && !e.target.closest('th[data-col-menu]')) closeColMenu(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeColMenu(); });
+  // A <th tabindex="0"> receiving focus/click near .radar-table-scroll's edge makes the BROWSER
+  // auto-scroll the table to bring it fully into view — a normal side effect of the very click
+  // that opens the menu, not a reason to close it. Reposition the fixed menu under its header on
+  // scroll instead (it also then tracks the header if the page itself scrolls); resize is rarer
+  // and heavier, so it still just closes.
+  window.addEventListener('scroll', () => { if (colMenuOpenTh && document.contains(colMenuOpenTh)) positionColMenu(colMenuOpenTh); else closeColMenu(); }, true);
+  window.addEventListener('resize', () => closeColMenu());
+  document.querySelectorAll('.radar-universe-pill').forEach(btn => btn.addEventListener('click', () => {
+    universe.value = btn.dataset.universeValue; tablePage = 1; render();
+  }));
+  const esc = value => String(value ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const text = value => value == null || value === '' ? 'N/A' : esc(value);
+  // Exact-match CSS class for the Verdict column (js/verdictDisplay.js).
+  // Must NOT use substring includes('confirmed') — that mis-labels UNCONFIRMED / MIXED.
+  const verdictClass = value => (window.VikramVerdictDisplay && window.VikramVerdictDisplay.verdictClass)
+    ? window.VikramVerdictDisplay.verdictClass(value)
+    : (String(value || '').toUpperCase() === 'DISTRIBUTION' ? 'status-distribution'
+      : String(value || '').toUpperCase() === 'ACCUMULATION CONFIRMED' ? 'status-confirmed'
+      : String(value || '').toUpperCase() === 'ACCUMULATION STARTING' ? 'status-starting'
+      : 'status-mixed');
+  // Detection History UI (Phase 1). Delegates rendering to js/detectionHistoryView.js so this
+  // exact logic is unit-tested (server/test/detectionHistoryView.test.js), not just eyeballed.
+  function detectionCell(r) {
+    return window.VikramDetectionHistoryView.renderDetectionCell(r, text);
+  }
+
+  // Opportunity Radar (Blueprint §12/§5). Reuses the SAME already-fetched `rows` — no second
+  // network call, no invented score. Progressive disclosure: collapsed = Level 1 only; expanding
+  // a row reveals Level 2 (why) -> Level 3 (evidence) -> Level 4 (pointer back to the full
+  // Accumulation Scanner row).
+  const radarCategory = document.getElementById('radarCategory');
+  const radarList = document.getElementById('radarList');
+  function renderOpportunityRadar() {
+    if (!radarList || !window.VikramOpportunityRadar) return;
+    const { buildRadar, buildDisclosure } = window.VikramOpportunityRadar;
+    // Same canonical RSI data + same rsiRowMatches() predicate as the Master/Accumulation
+    // scanner above — Opportunity Radar narrows further, it never recomputes RSI itself.
+    const rsiStateRadar = getRsiFilterState();
+    const rsiFilteredRows = rsiIsActive(rsiStateRadar) ? rows.filter(r => rsiRowMatches(r, rsiStateRadar)) : rows;
+    const ranked = buildRadar(rsiFilteredRows, radarCategory ? radarCategory.value : 'ALL').slice(0, 50);
+    radarList.innerHTML = ranked.length ? ranked.map(({ row }) => {
+      const d = buildDisclosure(row, intelligenceMap);
+      const whyHtml = d.level2.why.length ? `<ul>${d.level2.why.map(w => `<li>${text(w)}</li>`).join('')}</ul>` : '<p class="text-muted">No additional explanation recorded.</p>';
+      const evidence = d.level5 ? d.level5.historicalEvidence : null;
+      const historicalHtml = evidence ? renderHistoricalEvidenceHtml(evidence) : '<p class="text-muted">No historical research evidence available yet for this symbol.</p>';
+      return `<details class="radar-row"><summary><strong>${text(d.level1.symbol)}</strong> — ${text(d.level1.verdict)} <span class="text-muted">(score ${text(d.level1.score)})</span></summary>
+        <div class="radar-detail"><strong>Why</strong>${whyHtml}
+        <strong>Evidence</strong><ul><li>Volume ratio: ${d.level3.volumeRatio == null ? 'N/A' : Number(d.level3.volumeRatio).toFixed(2) + 'x'}</li><li>Delivery: ${d.level3.deliveryPct == null ? 'N/A' : Number(d.level3.deliveryPct).toFixed(1) + '%'}</li><li>Change in OI: ${d.level3.changeOi == null ? 'N/A' : Number(d.level3.changeOi).toLocaleString('en-IN')}</li></ul>
+        <strong>Historical Research Evidence <span class="text-muted">(not a guarantee — see 1-Year Research)</span></strong>${historicalHtml}
+        <a href="${d.level4.deepLinkAnchor}">${text(d.level4.note)}</a></div></details>`;
+    }).join('') : '<p class="text-muted">No opportunities match this filter.</p>';
+  }
+  if (radarCategory) radarCategory.addEventListener('change', renderOpportunityRadar);
+
+  // Renders a symbol's real historical ASM-derived evidence (see backtest/lib/researchIntelligence.js).
+  function renderHistoricalEvidenceHtml(evidence) {
+    const horizons = ['20D', '60D', '5D', '1D', '120D'].filter(h => evidence.horizons && evidence.horizons[h]);
+    const rows2 = horizons.slice(0, 3).map(h => {
+      const v = evidence.horizons[h];
+      if (!v || v.status !== 'COMPUTED') return `<li>${h}: DATA INSUFFICIENT (sample too small)</li>`;
+      return `<li>${h}: ${v.successRatePct}% success \u00b7 median ${v.medianReturnPct > 0 ? '+' : ''}${v.medianReturnPct}% \u00b7 confidence ${v.confidence} (n=${v.computedCount})</li>`;
+    }).join('');
+    return `<ul><li>Historical signals for this symbol: <strong>${evidence.totalHistoricalEvents}</strong> (${text(evidence.firstSignalDate)} \u2192 ${text(evidence.lastSignalDate)})</li>${rows2}</ul>`;
+  }
+
+  // Hidden Gems (Blueprint §13). Classification itself calls the LIVE server's /api/hidden-gems,
+  // not the static snapshot — the static site alone has no institutional/news data pipeline. On a
+  // static-only deployment with no live backend configured, this section honestly reports
+  // VERIFICATION BLOCKED rather than fabricating a classification. The meta line above the list
+  // (scan date / universe evaluated / confirmed count) is NOT part of that classification — it is
+  // computed from the SAME already-fetched, already-verified `rows` the Accumulation Scanner uses
+  // above, so the section is never fully empty when real scanner data exists, even while the
+  // institutional/news-driven classification itself remains unavailable.
+  const hiddenGemsList = document.getElementById('hiddenGemsList');
+  const hiddenGemsMeta = document.getElementById('hiddenGemsMeta');
+  function renderHiddenGemsMeta() {
+    if (!hiddenGemsMeta) return;
+    if (!rows.length) { hiddenGemsMeta.innerHTML = ''; return; }
+    const confirmedCount = rows.filter(r => String(r.verdict || '').toUpperCase().includes('CONFIRMED')).length;
+    hiddenGemsMeta.innerHTML = `<span>Scan date: <strong>${text(scannerAsOf)}</strong></span><span>Universe evaluated: <strong>${rows.length.toLocaleString('en-IN')}</strong></span><span>ACCUMULATION CONFIRMED: <strong>${confirmedCount.toLocaleString('en-IN')}</strong></span>`;
+  }
+  function renderHiddenGems() {
+    if (!hiddenGemsList) return;
+    renderHiddenGemsMeta();
+    const base = (window.ACCUMULATION_API_BASE || '').replace(/\/$/, '');
+    // Same canonical RSI data + same rsiRowMatches() predicate as every other surface — Hidden
+    // Gems narrows further, it never recomputes RSI itself.
+    const rsiStateGems = getRsiFilterState();
+    const rsiFilteredRowsForGems = rsiIsActive(rsiStateGems) ? rows.filter(r => rsiRowMatches(r, rsiStateGems)) : rows;
+    if (!base) {
+      // No live backend configured -> the full stealth/recognition/institutional classification
+      // genuinely cannot be computed here, and we do not fabricate one. But the canonical
+      // Research Intelligence artifact (real, already computed from NSE history) IS a static
+      // file, so we can honestly show real historical evidence for today's ACCUMULATION
+      // CONFIRMED/STARTING symbols automatically — no live backend required.
+      const candidates = rsiFilteredRowsForGems.filter(r => {
+        const v = String(r.verdict || '').toUpperCase();
+        return v === 'ACCUMULATION CONFIRMED' || v === 'ACCUMULATION STARTING';
+      });
+      const withEvidence = candidates
+        .map(r => ({ row: r, evidence: intelligenceMap.get(r.symbol) || null }))
+        .filter(x => x.evidence);
+      const evidenceHtml = withEvidence.length
+        ? `<div class="hg-empty-state" style="margin-top:10px"><strong>HISTORICAL RESEARCH EVIDENCE (STATIC) \u2014 ${withEvidence.length} of ${candidates.length} current CONFIRMED/STARTING symbol(s) have prior signal history</strong>
+          <p class="text-muted" style="margin:6px 0">This is NOT a live Hidden Gems classification (institutional/news evidence still requires a connected backend) and NOT a recommendation \u2014 it is how each symbol's own past ACCUMULATION CONFIRMED signals actually performed.</p>
+          ${withEvidence.slice(0, 30).map(({ row: r, evidence }) => `<details class="radar-row"><summary><strong>${text(r.symbol)}</strong> \u2014 ${text(r.verdict)} <span class="text-muted">(${evidence.totalHistoricalEvents} prior signal${evidence.totalHistoricalEvents === 1 ? '' : 's'})</span></summary><div class="radar-detail">${renderHistoricalEvidenceHtml(evidence)}</div></details>`).join('')}
+        </div>`
+        : '';
+      hiddenGemsList.innerHTML = '<div class="hg-empty-state"><strong>NO VERIFIED HIDDEN GEMS</strong>Hidden Gems classification depends on institutional and news evidence, which is only computed by the live VIKRAM backend — not configured on this static deployment. VERIFICATION BLOCKED. This is not the same as \u201cno candidates found\u201d and no candidate list is being estimated in its place.</div>' + evidenceHtml;
+      return;
+    }
+    fetch(base + '/api/hidden-gems').then(r => r.json()).then(data => {
+      if (!data.results || !data.results.length) { hiddenGemsList.innerHTML = '<div class="hg-empty-state"><strong>NO VERIFIED HIDDEN GEMS</strong>No ACCUMULATION CONFIRMED symbols currently meet the Hidden Gems evidence requirements.</div>'; return; }
+      hiddenGemsList.innerHTML = data.results.map(r => `<details class="radar-row"><summary><strong>${text(r.symbol)}</strong> — ${text(r.classification)} <span class="text-muted">(tier: ${text(r.tier || 'NONE')})</span></summary>
+        <div class="radar-detail">Stealth: ${r.stealth ? (r.stealth.isStealthy ? 'moderate evidence' : 'not stealthy') : 'N/A'} \u00b7 Recognition: ${text(r.recognitionState)} \u00b7 Institutional: ${text(r.institutionalState)} \u00b7 Data confidence: ${text(r.dataConfidence)}<br>Config: ${text(r.configVersion)} (unvalidated)
+        ${r.historicalEvidence ? `<br><strong>Historical Research Evidence</strong>${renderHistoricalEvidenceHtml(r.historicalEvidence)}` : '<br><span class="text-muted">No historical research evidence available yet for this symbol.</span>'}</div></details>`).join('');
+    }).catch(() => { hiddenGemsList.innerHTML = '<div class="hg-empty-state"><strong>NO VERIFIED HIDDEN GEMS</strong>Hidden Gems research pass unavailable right now. VERIFICATION BLOCKED.</div>'; });
+  }
+
+  // Analytics (Blueprint §R). Reuses the SAME already-fetched `rows` — no new fetch, no invented
+  // number. Rendered once the same rows load, alongside Opportunity Radar and Hidden Gems.
+  const analyticsBody = document.getElementById('analyticsBody');
+  function renderAnalytics() {
+    if (!analyticsBody || !window.VikramAnalytics) return;
+    const a = window.VikramAnalytics.buildAnalytics(rows);
+    const verdictRows = Object.entries(a.verdictDistribution).map(([v, n]) => `<li>${text(v)}: ${n}</li>`).join('') || '<li class="text-muted">No data.</li>';
+    const universeRows = Object.entries(a.universeBreakdown).map(([t, n]) => `<li>${text(t)}: ${n}</li>`).join('');
+    analyticsBody.innerHTML = `<div class="analytics-grid">
+      <div><strong>Verdict distribution</strong><ul>${verdictRows}</ul></div>
+      <div><strong>Universe breakdown</strong><ul>${universeRows}</ul></div>
+      <div><strong>Score (Confirmed/Starting only)</strong><ul><li>Sample size: ${a.scoreSummary.count}</li><li>Average: ${a.scoreSummary.average ?? 'N/A'}</li><li>Median: ${a.scoreSummary.median ?? 'N/A'}</li></ul></div>
+      <div><strong>Data quality</strong><ul><li>Rows: ${a.dataQuality.totalRows}</li><li>Missing volume: ${a.dataQuality.missingVolume}</li><li>Missing delivery: ${a.dataQuality.missingDelivery}</li></ul></div>
+    </div>`;
+  }
+
+  // Settings: honest live-data gate status from the live server (never fabricated on the static
+  // page itself). If no live backend is configured, this says so rather than guessing a status.
+  const liveDataStatus = document.getElementById('liveDataStatus');
+  function renderLiveDataStatus() {
+    if (!liveDataStatus) return;
+    const base = (window.ACCUMULATION_API_BASE || '').replace(/\/$/, '');
+    if (!base) { liveDataStatus.textContent = 'Live market data status: unavailable (no live backend configured on this static page).'; return; }
+    fetch(base + '/api/health').then(r => r.json()).then(d => {
+      const s = d.liveMarketData;
+      liveDataStatus.textContent = s ? `Live market data status: ${s.status}${s.configured ? '' : ' (provider not configured)'}` : 'Live market data status: unavailable.';
+    }).catch(() => { liveDataStatus.textContent = 'Live market data status: unavailable right now.'; });
+  }
+  renderLiveDataStatus();
+
+  // Verdict filtering is presentation-layer matching only. Normalize whitespace/case so a
+  // verified engine verdict such as "ACCUMULATION STARTING" still matches if a serialized
+  // snapshot contains harmless formatting differences. This does NOT change the engine enum,
+  // thresholds, scores, or verdict assignment.
+  const normalizeVerdictFilterValue = value => String(value ?? '').trim().replace(/\s+/g, ' ').toUpperCase();
+  const verdictMatches = (rowVerdict, selectedVerdict) => selectedVerdict === 'ALL'
+    || normalizeVerdictFilterValue(rowVerdict) === normalizeVerdictFilterValue(selectedVerdict);
+
+  function colTh(key) {
+    const cfg = COLUMN_MENUS[key];
+    const [sortKey, sortDirection] = (sortSelect && sortSelect.value ? sortSelect.value : 'score:desc').split(':');
+    const filterSel = cfg.filterSelectId ? document.getElementById(cfg.filterSelectId) : null;
+    const filterActive = !!(filterSel && filterSel.value !== 'ALL');
+    const sortActive = cfg.sortKey && sortKey === cfg.sortKey;
+    const arrow = sortActive ? (sortDirection === 'asc' ? ' ↑' : ' ↓') : ' ▾';
+    const dot = filterActive ? ' ●' : '';
+    const ariaSort = sortActive ? (sortDirection === 'asc' ? 'ascending' : 'descending') : 'none';
+    const cls = (filterActive || sortActive) ? ' class="radar-th-active"' : '';
+    return `<th${cls} data-col-menu="${key}" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false" aria-sort="${ariaSort}" style="cursor:pointer;user-select:none" title="${esc(cfg.label)} — click for filter/sort options">${esc(cfg.label)}${arrow}${dot}</th>`;
+  }
+  function render() {
+    closeColMenu(); // thead is rebuilt below; never leave a menu pointing at a detached <th>
+    const [sortKey, sortDirection] = (sortSelect && sortSelect.value ? sortSelect.value : 'score:desc').split(':');
+    const u = universe.value, v = verdict.value, min = Number(score.value || 0);
+    const inUniverse = r => window.VikramUniverseMembership.matchesUniverse(r, u);
+    document.querySelectorAll('.radar-universe-pill').forEach(btn => btn.classList.toggle('active', btn.dataset.universeValue === u));
+    // OBV Trend / Volume Breakout / High Delivery / OI Build-up: same sign/threshold tests already
+    // used elsewhere (row rendering below; js/opportunityRadar.js categoriesFor()) — not new
+    // semantics. Missing (null) values only ever match "All", never a specific bucket — a stock
+    // with no F&O data is not silently counted as "no OI build-up", it is excluded from that
+    // opt-in filter entirely, consistent with Missing ≠ Zero.
+    const obvVal = obvFilter ? obvFilter.value : 'ALL';
+    const matchesObv = r => {
+      if (obvVal === 'ALL') return true;
+      const t = r.metrics?.obvTrend; if (t == null) return false;
+      const n = Number(t);
+      return obvVal === 'RISING' ? n > 0 : obvVal === 'FALLING' ? n < 0 : obvVal === 'FLAT' ? n === 0 : true;
+    };
+    const volumeVal = volumeFilter ? volumeFilter.value : 'ALL';
+    const matchesVolume = r => volumeVal !== 'BREAKOUT' || (r.metrics?.volumeRatio != null && Number(r.metrics.volumeRatio) >= 2);
+    const deliveryVal = deliveryFilter ? deliveryFilter.value : 'ALL';
+    const matchesDelivery = r => deliveryVal !== 'HIGH' || (r.metrics?.deliveryPct != null && Number(r.metrics.deliveryPct) >= 60);
+    const oiChangeVal = oiChangeFilter ? oiChangeFilter.value : 'ALL';
+    const matchesOiChange = r => oiChangeVal !== 'BUILDUP' || (r.metrics?.changeOi != null && Number(r.metrics.changeOi) > 0);
+    // Blueprint requirement: show universe + EOD status/date + constituent count, sourced only
+    // from what the verified snapshot actually reports — never a guessed/fabricated count.
+    if (universeStatusLine) {
+      universeStatusLine.textContent = window.VikramUniverseMembership.universeStatusLine(rows, u, indexUniverseStatus);
+    }
+    // FILTER step: universe/verdict/score/search narrow which rows are included. Order is
+    // untouched here — that is entirely the SORT step below, which never changes membership.
+    const rsiState = getRsiFilterState();
+    const filteredForUniverse = rows.filter(r => inUniverse(r) && verdictMatches(r.verdict, v) && (Number(r.score) || 0) >= min && matchesObv(r) && matchesVolume(r) && matchesDelivery(r) && matchesOiChange(r) && rsiRowMatches(r, rsiState));
+    const { filterRows, sortRows, paginate } = window.VikramTableControls || {};
+    const textFiltered = filterRows ? filterRows(filteredForUniverse, tableSearch ? tableSearch.value : '') : filteredForUniverse;
+    // SORT step: reorders the already-filtered set; never adds or removes a row.
+    const sorted = sortRows ? sortRows(textFiltered, sortKey, sortDirection) : textFiltered;
+    // PAGINATE step: real pagination over the full filtered+sorted set — 25 rows on the DOM at a
+    // time, not all rows hidden with CSS. Changing any filter, the sort, or the search recomputes
+    // this and resets to page 1 (both handled by their own change/input listeners above).
+    const { pageRows: visible, page, totalPages, totalRows } = paginate ? paginate(sorted, tablePage, TABLE_PAGE_SIZE) : { pageRows: sorted, page: 1, totalPages: 1, totalRows: sorted.length };
+    tablePage = page;
+    if (tablePagination) {
+      tablePagination.innerHTML = totalRows
+        ? `<span>${totalRows} matching stock${totalRows === 1 ? '' : 's'} \u00b7 page ${page} of ${totalPages}</span><span><button type="button" id="prevPageBtn" ${page <= 1 ? 'disabled' : ''}>\u2190 Prev</button> <button type="button" id="nextPageBtn" ${page >= totalPages ? 'disabled' : ''}>Next \u2192</button></span>`
+        : '';
+      const prevBtn = document.getElementById('prevPageBtn'); const nextBtn = document.getElementById('nextPageBtn');
+      if (prevBtn) prevBtn.addEventListener('click', () => { tablePage -= 1; render(); });
+      if (nextBtn) nextBtn.addEventListener('click', () => { tablePage += 1; render(); });
+    }
+    // Summary cards + verdict legend: computed over the UNIVERSE+VERDICT+SCORE filtered set
+    // (filteredForUniverse), NOT the paginated page and NOT narrowed further by the free-text
+    // search -- these are meant to answer "how many candidates match my filters", the same
+    // scope the "N stocks" status line above already uses, not "how many are on this page".
+    const summaryCardsEl = document.getElementById('scannerSummaryCards');
+    const legendEl = document.getElementById('verdictLegend');
+    if (summaryCardsEl) {
+      const score75 = filteredForUniverse.filter(r => (Number(r.score) || 0) >= 75).length;
+      const starting = filteredForUniverse.filter(r => verdictMatches(r.verdict, 'ACCUMULATION STARTING')).length;
+      const confirmed = filteredForUniverse.filter(r => verdictMatches(r.verdict, 'ACCUMULATION CONFIRMED')).length;
+      const dateLabel = scannerAsOf || 'N/A';
+      const card = (cls, icon, value, label, sub) => `<div class="radar-summary-card ${cls}"><span class="rsc-icon">${icon}</span><div class="rsc-value">${value}</div><div class="rsc-label">${label}</div><div class="rsc-sub">${sub}</div></div>`;
+      summaryCardsEl.innerHTML = [
+        card('cyan','↗',score75.toLocaleString('en-IN'),'Score 75+ Candidates',`out of ${filteredForUniverse.length.toLocaleString('en-IN')} stocks`),
+        card('blue','◉',starting.toLocaleString('en-IN'),'Accumulation Started','showing early accumulation signals'),
+        card('green','✓',confirmed.toLocaleString('en-IN'),'Accumulation Confirmed',confirmed===0?'none currently meet the confirmed gate':'stronger conviction opportunities'),
+        card('purple','◌','N/A','Watchlist Candidates','Watchlist UI not available yet'),
+        card('orange','▣',dateLabel,'Verified data date',`Data age: ${dataAgeEl?.textContent || 'N/A'}`)
+      ].join('');
+    }
+    if (legendEl) {
+      const dot = (cls, label) => `<span><i class="${cls}"></i>${label}</span>`;
+      legendEl.innerHTML = [
+        dot('legend-confirmed','Accumulation Confirmed'),
+        dot('legend-starting','Accumulation Started'),
+        dot('legend-mixed','Unconfirmed / Mixed'),
+        dot('legend-distribution','Distribution')
+      ].join('');
+    }
+
+    if (!scannerCards) return;
+    // Headers stay in the DOM even with zero matching rows. They are now the ONLY way to change a
+    // filter (the old separate bar is gone), so a user who filters down to zero rows must still be
+    // able to click e.g. VERDICT and pick a different option directly -- not lose every header and
+    // be forced to hit the global Reset just to undo one filter. "No verified rows match these
+    // filters." becomes a full-width message row inside <tbody> instead of replacing the table.
+    const headRow = `<thead><tr style="text-align:left">
+        <th>RANK</th>${colTh('stock')}${colTh('price')}${colTh('score')}${colTh('today')}${colTh('volume')}${colTh('delivery')}${colTh('obv')}${colTh('futuresOi')}${colTh('oiChange')}${colTh('verdict')}<th>ACTIONS</th>
+      </tr></thead>`;
+    scannerCards.innerHTML = `<table style="width:100%;border-collapse:collapse;min-width:760px">
+      ${headRow}
+      <tbody>${visible.length ? visible.map((r, i) => {
+        const changePct = r.metrics?.priceChangePct;
+        const changeClass = changePct == null ? '' : (changePct >= 0 ? 'status-confirmed' : 'status-distribution');
+        const score = Number(r.score) || 0;
+        const rank = ((page - 1) * TABLE_PAGE_SIZE) + i + 1;
+        const scoreClass = score >= 75 ? 'radar-score-pill' : '';
+        const oi = r.metrics?.futuresOi == null ? '—' : Number(r.metrics.futuresOi).toLocaleString('en-IN');
+        const oiChange = r.metrics?.changeOi == null ? '—' : Number(r.metrics.changeOi).toLocaleString('en-IN');
+        return `<tr>
+          <td class="radar-rank">${rank}</td>
+          <td><strong>${text(r.companyName || r.symbol)}</strong><div style="color:var(--text-muted);font-size:10px">${text(r.symbol)}</div></td>
+          <td>${text(r.metrics?.close)}</td>
+          <td><span class="${scoreClass}">${text(r.score)}</span></td>
+          <td class="${changeClass}">${changePct == null ? 'N/A' : `${changePct >= 0 ? '+' : ''}${Number(changePct).toFixed(2)}%`}</td>
+          <td>${r.metrics?.volumeRatio == null ? 'N/A' : `${Number(r.metrics.volumeRatio).toFixed(2)}x`}</td>
+          <td>${r.metrics?.deliveryPct == null ? 'N/A' : `${Number(r.metrics.deliveryPct).toFixed(1)}%`}</td>
+          <td>${r.metrics?.obvTrend == null ? 'N/A' : (Number(r.metrics.obvTrend) > 0 ? '↗ Rising' : Number(r.metrics.obvTrend) < 0 ? '↘ Falling' : '→ Flat')}</td>
+          <td>${oi}</td>
+          <td class="${Number(r.metrics?.changeOi)>0?'status-confirmed':Number(r.metrics?.changeOi)<0?'status-distribution':''}">${oiChange}</td>
+          <td><span class="${verdictClass(r.verdict)} dc-verdict">${text(r.verdict)}</span></td>
+          <td><button class="radar-action-btn" type="button" data-radar-symbol="${esc(r.symbol)}" title="Open research">↗</button></td>
+        </tr>`;
+      }).join('') : '<tr><td colspan="12" class="empty-cell">No verified rows match these filters.</td></tr>'}</tbody>
+    </table>`;
+    scannerCards.querySelectorAll('[data-radar-symbol]').forEach(btn => btn.addEventListener('click', () => go(btn.dataset.radarSymbol)));
+    updateFilterUI(totalRows);
+  }
+  function go(symbol) { const q = String(symbol || '').trim().toUpperCase(); if (q) window.location.href = `index.html?symbol=${encodeURIComponent(q)}#companyOverview`; }
+  function showSuggestions() {
+    const q = search.value.trim();
+    const hits = window.VIKRAM_DATA_ENGINE?.searchSuggestions(q) || [];
+    if (!q || !hits.length) { suggestions.hidden = true; suggestions.innerHTML = ''; return; }
+    suggestions.innerHTML = hits.map(h => `<div class="suggestion" data-symbol="${esc(h.ticker)}"><strong>${esc(h.ticker)}</strong><small>${esc(h.name)}</small></div>`).join('');
+    suggestions.hidden = false;
+    suggestions.querySelectorAll('.suggestion').forEach(el => el.addEventListener('click', () => go(el.dataset.symbol)));
+  }
+  document.getElementById('heroSearchForm').addEventListener('submit', e => { e.preventDefault(); const q = search.value.trim().toUpperCase(); const exact = rows.find(r => String(r.symbol || '').toUpperCase() === q); go(exact?.symbol || q); });
+  search.addEventListener('input', showSuggestions);
+  search.addEventListener('focus', showSuggestions);
+  document.addEventListener('click', e => { if (!e.target.closest('.hero-search')) suggestions.hidden = true; });
+  document.querySelectorAll('.ticker-pill').forEach(btn => btn.addEventListener('click', () => { search.value = btn.dataset.symbol; go(btn.dataset.symbol); }));
+  const filterMatchCount = document.getElementById('filterMatchCount');
+  const quickFilterButtons = Array.from(document.querySelectorAll('[data-quick-filter]'));
+  function updateFilterUI(matchCount) {
+    if (filterMatchCount) filterMatchCount.textContent = matchCount == null ? 'All verified stocks' : `${matchCount.toLocaleString('en-IN')} matching stocks`;
+    quickFilterButtons.forEach(btn => {
+      const q = btn.dataset.quickFilter;
+      const active = q === 'ALL'
+        ? universe.value === 'ALL' && verdict.value === 'ALL' && Number(score.value || 0) === 0 && !(tableSearch?.value || '').trim()
+        : q === verdict.value || (q === score.value && universe.value === 'ALL' && verdict.value === 'ALL');
+      btn.classList.toggle('active', active);
+    });
+  }
+  quickFilterButtons.forEach(btn => btn.addEventListener('click', () => {
+    const q = btn.dataset.quickFilter;
+    if (q === 'ALL') { universe.value = 'ALL'; verdict.value = 'ALL'; score.value = '0'; if (tableSearch) tableSearch.value = ''; }
+    else if (/^\d+$/.test(q)) { verdict.value = 'ALL'; score.value = q; }
+    else { verdict.value = q; score.value = '0'; }
+    tablePage = 1; render();
+  }));
+  const clearScannerFilters = document.getElementById('clearScannerFilters');
+  if (clearScannerFilters) clearScannerFilters.addEventListener('click', () => {
+    universe.value = 'ALL'; verdict.value = 'ALL'; score.value = '0';
+    [obvFilter, volumeFilter, deliveryFilter, oiChangeFilter].forEach(el => { if (el) el.value = 'ALL'; });
+    rsiFilterIds.forEach(id => {
+      const el = rsiFilterEls[id];
+      if (!el) return;
+      if (id === 'rsiRangeMin' || id === 'rsiRangeMax') el.value = '';
+      else if (id === 'rsiAlignmentFilter') el.value = 'NONE';
+      else if (id === 'rsiRangeTimeframe') el.value = 'DAILY';
+      else el.value = 'ALL';
+    });
+    if (tableSearch) tableSearch.value = '';
+    if (sortSelect) sortSelect.value = 'score:desc';
+    tablePage = 1; render(); renderOpportunityRadar(); renderHiddenGems();
+  });
+  [universe,verdict,score].forEach(el => el.addEventListener('change', () => { tablePage = 1; render(); }));
+
+  document.querySelectorAll('.surface-tab:not(:disabled)').forEach(tab => tab.addEventListener('click', () => { document.querySelectorAll('.surface-tab').forEach(x => { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); }); tab.classList.add('active'); tab.setAttribute('aria-selected', 'true'); }));
+  const d = new Date(); document.getElementById('feedDate').textContent = d.toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  const mlDate = document.getElementById('marketLiveDate');
+  if (mlDate) mlDate.textContent = d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'});
+  (function marketStatus() {
+    const badge = document.getElementById('marketStatusBadge');
+    if (!badge) return;
+    try {
+      const istParts = new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Kolkata', hour12: false, weekday: 'short', hour: '2-digit', minute: '2-digit' }).formatToParts(new Date());
+      const get = t => istParts.find(p => p.type === t).value;
+      const weekday = get('weekday');
+      const hour = parseInt(get('hour'), 10);
+      const minute = parseInt(get('minute'), 10);
+      const minutesNow = hour * 60 + minute;
+      const isWeekday = !['Sat', 'Sun'].includes(weekday);
+      const isTradingWindow = minutesNow >= (9 * 60 + 15) && minutesNow <= (15 * 60 + 30);
+      const open = isWeekday && isTradingWindow;
+      badge.textContent = open ? 'Market Open' : 'Market Closed';
+      badge.classList.toggle('is-open', open);
+      badge.title = 'Based on your device clock converted to IST — does not account for NSE holidays';
+    } catch (e) {
+      badge.textContent = 'Market status unknown';
+    }
+  })();
+  const dataDateEl = document.getElementById('scannerDataDate');
+  const dataAgeEl = document.getElementById('scannerDataAge');
+  function renderScannerMeta(asOf) {
+    if (!dataDateEl || !dataAgeEl) return;
+    if (!asOf) { dataDateEl.textContent = 'N/A'; dataAgeEl.textContent = 'N/A'; return; }
+    const asOfDate = new Date(`${asOf}T00:00:00Z`);
+    if (Number.isNaN(asOfDate.getTime())) { dataDateEl.textContent = 'N/A'; dataAgeEl.textContent = 'N/A'; return; }
+    dataDateEl.textContent = asOfDate.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
+    const diffDays = Math.floor((Date.now() - asOfDate.getTime()) / 86400000);
+    dataAgeEl.textContent = diffDays <= 0 ? 'Today (EOD verified)' : diffDays === 1 ? '1 day old' : `${diffDays} days old`;
+  }
+  fetch('data/scanner.json',{cache:'no-store'}).then(r => r.json()).then(snapshot => { if (snapshot.dataStatus !== 'EOD VERIFIED') throw new Error('SNAPSHOT_NOT_VERIFIED'); rows = Array.isArray(snapshot.results) ? snapshot.results : []; indexUniverseStatus = snapshot.indexUniverseStatus || 'DATA N/A'; scannerAsOf = snapshot.asOf || null; renderScannerMeta(snapshot.asOf); render(); renderOpportunityRadar(); renderAnalytics(); renderHiddenGems(); if (window.VikramResearchIntelligence) { window.VikramResearchIntelligence.load().then(data => { intelligenceMap = new Map(Object.entries(data.symbols || {})); renderOpportunityRadar(); renderHiddenGems(); }).catch(() => {}); } }).catch(() => { if (scannerCards) scannerCards.innerHTML = '<p class="empty-cell">Verified scanner snapshot unavailable. No market values are being estimated.</p>'; if (universeStatusLine) universeStatusLine.textContent = 'DATA N/A'; renderScannerMeta(null); if (radarList) radarList.innerHTML = '<p class="text-muted">Verified scanner snapshot unavailable.</p>'; renderHiddenGems(); });
+})();
+</script>
+<script src="js/researchRepair.js"></script>
+<script src="js/discoveryRepair.js"></script>
+<script src="js/homeAurora.js"></script>
+<script src="js/vikramAccess.js" defer></script>
+<script src="js/vikramGuide.js" defer></script>
+</body>
+</html>

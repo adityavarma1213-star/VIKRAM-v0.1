@@ -1,0 +1,153 @@
+/* ==========================================================================
+   VIKRAM Home — "Sample Match" dark-card override.
+   Colors below were sampled directly (pixel-picked) from the approved
+   reference screenshot, not estimated. Keeps the existing light-indigo
+   page background (css/themes.css aurora/light body gradient) and instead
+   makes the HERO, MARKET LIVE, INDEX CARDS and WIDGET PANELS deep navy —
+   exactly like the sample — while the 5 primary action cards get the
+   exact hue each one uses in the sample (Research=blue, Ask AI=purple,
+   Scan=teal, F&O=orange, Portfolio=violet).
+   Loaded after css/aurora.css so these rules win. Home page (index.html) only.
+   ========================================================================== */
+
+:root{
+  --smpl-card:        #123c8e;   /* card gradient top / lighter navy */
+  --smpl-card-2:      #0e3b96;   /* card base navy */
+  --smpl-card-deep:   #041c3d;   /* deepest navy, hero far edge */
+  --smpl-card-border: rgba(255,255,255,.10);
+  --smpl-text:        #ffffff;
+  --smpl-text-muted:  #aebdf2;
+  --smpl-accent:      #22d3ee;   /* cyan links / "View All" */
+  --smpl-green:       #34d399;
+  --smpl-red:         #ff9e9e;
+}
+
+/* ---------- Universal fix: reset the underlying color variables inside every
+   dark card, not just a few known classes. Several sections (Today's Focus,
+   Investor GPS, Data-Trust cells rendered by js/homeAurora.js) print inline
+   styles like color:var(--aurora-text-muted) or inherit body's default
+   var(--text-main) — which is dark navy text, invisible on a dark navy card.
+   Re-declaring these variables + `color` here means EVERY descendant that
+   relies on inheritance or on these variables automatically becomes legible,
+   including content the app injects with JavaScript after this file loads. */
+.hero-panoramic.aurora-hero,
+.market-live-panel,
+.index-card,
+#researchProgress, #watchlistHighlights, #todaysPlan,
+.aurora-grid-2 .aurora-section,
+.recommend-card,
+.right-feed .feed-card{
+  --text-main: #ffffff;
+  --text-muted: var(--smpl-text-muted);
+  --aurora-text: #ffffff;
+  --aurora-text-muted: var(--smpl-text-muted);
+  --border-subtle: var(--smpl-card-border);
+  --bg-card-2: rgba(255,255,255,.10);
+  --accent-cyan: var(--smpl-accent);
+  --aurora-gps: var(--smpl-accent);
+  --green: var(--smpl-green); --red: var(--smpl-red);
+  --aurora-verified: var(--smpl-green); --aurora-negative: var(--smpl-red);
+  --amber-verdict: #fbbf24;
+  color: var(--text-main) !important;
+}
+/* .desc paragraphs (Today's Focus intro, Investor GPS body copy) explicitly
+   use the muted token above rather than the default heading color. */
+.aurora-grid-2 .aurora-section .desc,
+#researchProgress .desc, #watchlistHighlights .desc, #todaysPlan .desc{
+  color: var(--smpl-text-muted) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero-panoramic.aurora-hero{
+  background:
+    radial-gradient(120% 160% at 8% 0%, rgba(255,255,255,.10), transparent 55%),
+    linear-gradient(120deg, #1865cb 0%, #0d3f95 45%, var(--smpl-card-deep) 100%) !important;
+  border-color: var(--smpl-card-border) !important;
+}
+.hero-panoramic .eyebrow{ color:#c8f0ff !important; }
+.hero-panoramic h1, .hero-panoramic p, .hero-slogan{ color:var(--smpl-text) !important; }
+.hero-panoramic p{ color:#eaf2ff !important; opacity:.95 }
+.hero-search input{ background:rgba(255,255,255,.10) !important; color:var(--smpl-text) !important; border-color:var(--smpl-card-border) !important; }
+.hero-search input::placeholder{ color:#b7c8f5 !important; }
+.ticker-pill{ background:rgba(255,255,255,.08) !important; border-color:var(--smpl-card-border) !important; color:var(--smpl-text) !important; }
+
+/* ---------- Market Live panel + index cards ---------- */
+.market-live-panel{
+  background: linear-gradient(160deg, var(--smpl-card), #0a3480) !important;
+  border-color: var(--smpl-card-border) !important;
+  --green: var(--smpl-green); --red: var(--smpl-red);
+}
+.market-live-panel .mlp-title, .market-live-panel .mlp-title b,
+.market-live-panel .mlp-date{ color:var(--smpl-text) !important; }
+.market-live-panel .mlp-exchange-tabs{ background:rgba(0,0,0,.25) !important; }
+.market-live-panel .mlp-exchange{ color:var(--smpl-text-muted) !important; }
+.market-live-panel .mlp-exchange.active{ background:rgba(255,255,255,.14) !important; color:#fff !important; }
+.market-live-panel .mlp-dashboard-btn{ color:var(--smpl-accent) !important; }
+.market-live-panel .mlp-movers{ color:var(--smpl-text-muted) !important; }
+.market-live-panel .mlp-movers b{ color:var(--smpl-text) !important; }
+.market-live-panel .mlp-unavailable-badge{ background:rgba(255,255,255,.15) !important; color:var(--smpl-text) !important; }
+
+.index-card{
+  background: linear-gradient(155deg, #17429c, #0a2f74) !important;
+  border-color: var(--smpl-card-border) !important;
+}
+.index-card span{ color:#b4c5f3 !important; }
+.index-card strong{ color:var(--smpl-text) !important; }
+.index-card .delta{ color:var(--smpl-green) !important; }
+.index-card .delta.na{ color:#a8b8e3 !important; }
+
+/* ---------- 5 primary action cards — exact sample hues ---------- */
+.aurora-card--research{ background:linear-gradient(135deg,#146cf9,#0b3fb0) !important; }
+.aurora-card--ai{        background:linear-gradient(135deg,#9e42f6,#6d28d9) !important; }
+.aurora-card--discover{  background:linear-gradient(135deg,#0e8376,#0b5f58) !important; }
+.aurora-card--fo{        background:linear-gradient(135deg,#d9541f,#bf3a2c) !important; }
+.aurora-card--portfolio{ background:linear-gradient(135deg,#705df4,#5b3fd0) !important; }
+
+/* ---------- Widget panels: Research Progress / Watchlist / Today's Plan ---------- */
+#researchProgress, #watchlistHighlights, #todaysPlan,
+.aurora-grid-2 > .aurora-section{
+  background: linear-gradient(165deg, var(--smpl-card), #0a3480) !important;
+  border-color: var(--smpl-card-border) !important;
+}
+#researchProgress h2, #watchlistHighlights h2, #todaysPlan h2,
+.aurora-grid-2 > .aurora-section h2{ color:var(--smpl-text) !important; }
+#researchProgress .progress-pct-locked{ color:var(--smpl-text) !important; }
+#researchProgress .progress-track-locked{ background:rgba(255,255,255,.15) !important; }
+#researchProgress .progress-fill-locked{ background:linear-gradient(90deg,#22d3ee,#38bdf8) !important; }
+#researchProgress .progress-substats b{ color:var(--smpl-text) !important; }
+#researchProgress .progress-substats span,
+.honest-note{ color:var(--smpl-text-muted) !important; }
+.view-all-link{ color:var(--smpl-accent) !important; }
+.view-all-link[aria-disabled="true"]{ color:#a9b6d9 !important; }
+
+/* ---------- VIKRAM Recommends + Your Achievements ---------- */
+.aurora-grid-2 .aurora-section:not(.aurora-section--sm){
+  background: linear-gradient(165deg, var(--smpl-card), #0a3480) !important;
+  border-color: var(--smpl-card-border) !important;
+}
+.aurora-grid-2 .aurora-section:not(.aurora-section--sm) h2{ color:var(--smpl-text) !important; }
+.recommend-card{
+  background: rgba(255,255,255,.08) !important;
+  border-color: var(--smpl-card-border) !important;
+}
+.recommend-card .rc-eyebrow{ color:var(--smpl-accent) !important; }
+.recommend-card b{ color:var(--smpl-text) !important; }
+.achievement-badge span{ color:var(--smpl-text-muted) !important; }
+
+/* ---------- Discipline Compounds Wealth promo card ---------- */
+.promo-card{
+  background: linear-gradient(160deg,#3b2d78 0%,#71429a 45%,#a84f7c 78%,#c9603f 100%) !important;
+}
+.promo-card h3, .promo-quote{ color:#fff !important; }
+
+/* ---------- Right-rail feed cards (Today / Buffett quote / Market breadth) ---------- */
+.right-feed .feed-card{
+  background: linear-gradient(165deg, var(--smpl-card), #0a3480) !important;
+  border-color: var(--smpl-card-border) !important;
+  color: var(--smpl-text) !important;
+}
+.right-feed .feed-card h3, .right-feed .date-big, .right-feed .buffett{ color:var(--smpl-text) !important; }
+.right-feed .buffett small{ color:var(--smpl-text-muted) !important; }
+.right-feed .breadth-stats span{ color:var(--smpl-text-muted) !important; }
+.right-feed .breadth-stats b{ color:var(--smpl-text) !important; }
+.right-feed .donut:after{ background:var(--smpl-card-2) !important; color:#fff !important; }
